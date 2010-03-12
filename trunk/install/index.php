@@ -1,22 +1,17 @@
 <?php
 
 ##############################################################################
-# *																			 #
-# * XG PROYECT																 #
-# *  																		 #
-# * @copyright Copyright (C) 2008 - 2009 By lucky from Xtreme-gameZ.com.ar	 #
-# *																			 #
-# *																			 #
-# *  This program is free software: you can redistribute it and/or modify    #
-# *  it under the terms of the GNU General Public License as published by    #
-# *  the Free Software Foundation, either version 3 of the License, or       #
-# *  (at your option) any later version.									 #
-# *																			 #
-# *  This program is distributed in the hope that it will be useful,		 #
-# *  but WITHOUT ANY WARRANTY; without even the implied warranty of			 #
-# *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the			 #
-# *  GNU General Public License for more details.							 #
-# *																			 #
+#	OpenMOGame2 프로젝트
+#	라이센스 : GNU GPL v3.0
+#	이 프로젝트는 XGP 2.9.4 에서 분할되었습니다.
+#	OpenMOGame2 를 사용하고 있는 MOGame2 서버는 http://mogame2.kr 이며 운영자는 민군입니다.
+#	프로젝트 마스터 : 민군(kmsr819@naver.com) 
+#	코더 : 민군(kmsr819@naver.com)
+#	서포터 : 이현종(010-2299-0754)
+#	디자이너 : 동이군, 니콜라이(ims130@hotmail.com)
+#	번역자 : 니콜라이(ims130@hotmail.com), 김종범(010-8458-6161), 엘리나, 워니, 이현종
+#	XGP Team, SHWorks 호스팅에 감사드립니다.
+#	연락 : 민군(kmsr819@naver.com)
 ##############################################################################
 
 define('INSIDE'  , true);
@@ -34,7 +29,7 @@ $phpself  = $_SERVER['PHP_SELF'];
 $nextpage = $Page + 1;
 
 if(version_compare(PHP_VERSION, "5.1.0", "<"))
-	die("Error! Tu servidor debe tener al menos php 5.1.0");
+	die("PHP 5.1.0 이상을 사용하셔야 합니다!");
 
 if (empty($Mode)) { $Mode = 'intro'; }
 if (empty($Page)) { $Page = 1;       }
@@ -52,7 +47,7 @@ switch ($Mode) {
 				message ("La conexi&oacute;n a la base de datos a fallado","?mode=ins&page=1", 3, false, false);
 			}
 			elseif ($_GET['error'] == 2) {
-				message ("El fichero config.php no puede ser sustituido, no tenia acceso chmod 777","?mode=ins&page=1", 3, false, false);
+				message ("config.php 파일의 권한을 777로 해주세요.","?mode=ins&page=1", 3, false, false);
 			}
 
 			$frame  = parsetemplate ( gettemplate ('install/ins_form'), false);
@@ -84,7 +79,7 @@ switch ($Mode) {
 				exit();
 			}
 
-			$parse[first]	= "Conexi�n establecida con �xito...";
+			$parse[first]	= "Conexi? establecida con ?ito...";
 
 			fwrite($dz, "<?php\n");
 			fwrite($dz, "if(!defined(\"INSIDE\")){ header(\"location:".$xgp_root."\"); }\n");
@@ -98,7 +93,7 @@ switch ($Mode) {
 			fwrite($dz, "?>");
 			fclose($dz);
 
-			$parse[second]	= "Archivo config.php creado con �xito...";
+			$parse[second]	= "Archivo config.php creado con ?ito...";
 
 			doquery ($QryTableAks        , 'aks'    	);
 			doquery ($QryTableAlliance   , 'alliance'   );
@@ -117,14 +112,14 @@ switch ($Mode) {
 			doquery ($QryTableStatPoints , 'statpoints'	);
 			doquery ($QryTableUsers      , 'users'  	);
 
-			$parse[third]	= "Tablas creadas con �xito...";
+			$parse[third]	= "Tablas creadas con ?ito...";
 
 			$frame  = parsetemplate(gettemplate('install/ins_form_done'), $parse);
 		}
 		elseif ($Page == 3)
 		{
 			if ($_GET['error'] == 3)
-				message ("�Debes completar todos los campos!","?mode=ins&page=3", 2, false, false);
+				message ("좩ebes completar todos los campos!","?mode=ins&page=3", 2, false, false);
 
 			$frame  = parsetemplate(gettemplate('install/ins_acc'), false);
 		}
@@ -210,9 +205,9 @@ switch ($Mode) {
 		if ($_POST)
 		{
 			$conexion = mysql_connect($_POST[servidor], $_POST[usuario], $_POST[clave])
-			or die ('<font color=red><strong>Problemas en la conexi�n con el servidor, es probable que el <u>nombre del servidor, usuario o clave sean incorrectas o que mysql no esta funcionando.</u></strong></font>');
+			or die ('<font color=red><strong>Problemas en la conexi? con el servidor, es probable que el <u>nombre del servidor, usuario o clave sean incorrectas o que mysql no esta funcionando.</u></strong></font>');
 			@mysql_select_db($_POST[base],$conexion)
-			or die ('<font color=red><strong>Problemas en la conexi�n con la base de datos. Este error puede deberse a que <u>la base de datos no existe o escribiste mal el nombre de la misma.</u></strong></font>');
+			or die ('<font color=red><strong>Problemas en la conexi? con la base de datos. Este error puede deberse a que <u>la base de datos no existe o escribiste mal el nombre de la misma.</u></strong></font>');
 
 			if ($_POST[continuar] && (empty($_POST[modo]) or empty($_POST[servidor]) or empty($_POST[usuario]) or empty($_POST[clave]) or empty($_POST[base]) or empty($_POST[prefix])))
 			{
@@ -222,7 +217,7 @@ switch ($Mode) {
 			{
 				if(filesize('../config.php') == 0)
 				{
-					die(message("Error!, tu archivo config.php se encuentra vaci� o no configurado. En caso de no ser as� verifica que su chmod sea de 777","", "", false, false));
+					die(message("Error!, tu archivo config.php se encuentra vaci?o no configurado. En caso de no ser as?verifica que su chmod sea de 777","", "", false, false));
 				}
 				else
 				{
@@ -308,14 +303,14 @@ switch ($Mode) {
 												CHANGE `total_points` `total_points` BIGINT(20) NOT NULL DEFAULT '0',
 												CHANGE `total_count` `total_count` INT(11) NOT NULL DEFAULT '0',
 												CHANGE `stat_date` `stat_date` INT(11) NOT NULL DEFAULT '0'";
-				$Qry27 = "ALTER TABLE `$_POST[prefix]messages` CHANGE `message_subject` `message_subject` TEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL";
+				$Qry27 = "ALTER TABLE `$_POST[prefix]messages` CHANGE `message_subject` `message_subject` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL";
 				$Qry28 = "DROP TABLE `$_POST[prefix]lunas`";
 				$Qry29 = "ALTER TABLE `$_POST[prefix]users` ADD `current_luna` INT( 11 ) NOT NULL DEFAULT '0' AFTER `ally_rank_id` ";
 				$Qry30 = "INSERT INTO `$_POST[prefix]config` (`config_name`, `config_value`) VALUES ('moderation', '1,0,0,1;1,1,0,1;');";
-				$Qry31 = " ALTER TABLE `$_POST[prefix]banned` CHANGE `who` `who` VARCHAR( 64 ) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL ,
-							CHANGE `who2` `who2` VARCHAR( 64 ) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL ,
-							CHANGE `author` `author` VARCHAR( 64 ) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL ,
-							CHANGE `email` `email` VARCHAR( 64 ) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL ";
+				$Qry31 = " ALTER TABLE `$_POST[prefix]banned` CHANGE `who` `who` VARCHAR( 64 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+							CHANGE `who2` `who2` VARCHAR( 64 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+							CHANGE `author` `author` VARCHAR( 64 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+							CHANGE `email` `email` VARCHAR( 64 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ";
 				$Qry32 = "UPDATE `$_POST[prefix]config` SET `config_value` = '1,0,0,1,1;1,1,0,1,1;1;' WHERE `xgp_config`.`config_name` = 'moderation';";
 				$Qry33 = "ALTER TABLE `$_POST[prefix]planets` CHANGE `small_protection_shield` `small_protection_shield` TINYINT( 1 ) NOT NULL DEFAULT '0', CHANGE `planet_protector` `planet_protector` TINYINT( 1 ) NOT NULL DEFAULT '0', CHANGE `big_protection_shield` `big_protection_shield` TINYINT( 1 ) NOT NULL DEFAULT '0'";
 
@@ -364,7 +359,7 @@ switch ($Mode) {
 					mysql_query($DoQuery);
 				}
 
-				message("XG Proyect finaliz� la actualizaci�n con �xito, para finalizar borra el directorio install y luego haz <a href=\"./../\">click aqui</a>", "", "", false, false);
+				message("XG Proyect finaliz?la actualizaci? con ?ito, para finalizar borra el directorio install y luego haz <a href=\"./../\">click aqui</a>", "", "", false, false);
 			}
 		}
 		else

@@ -8,7 +8,6 @@ OpenMOGame2
 설치후 install 폴더 삭제후 config.php 퍼미션을 707로 바꾼다.
 
 2. 서버 텍스트 설정
-서버 이름같은거나 서버중지 사유같은 설정은 한글입력하면 글씨 다깨짐
-그럴땐 config 테이블(mysql db)에 들어가서 config_value 필드의 인코딩을 unicode_ci로 바꾸면됨.
-글구 포럼 주소를 설정해도 안바뀌는데.. mysql db에서 보면 잘 바뀌어있음
+만약 글씨 깨지는경우.. 유니코드 문제를 의심해야함
+DB는 인코딩을 utf8_general_ci 로, 파일은 UTF8 Without BOM으로 맞추면됨.
 

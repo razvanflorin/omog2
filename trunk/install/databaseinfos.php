@@ -1,66 +1,61 @@
 <?php
 
 ##############################################################################
-# *																			 #
-# * XG PROYECT																 #
-# *  																		 #
-# * @copyright Copyright (C) 2008 - 2009 By lucky from Xtreme-gameZ.com.ar	 #
-# *																			 #
-# *																			 #
-# *  This program is free software: you can redistribute it and/or modify    #
-# *  it under the terms of the GNU General Public License as published by    #
-# *  the Free Software Foundation, either version 3 of the License, or       #
-# *  (at your option) any later version.									 #
-# *																			 #
-# *  This program is distributed in the hope that it will be useful,		 #
-# *  but WITHOUT ANY WARRANTY; without even the implied warranty of			 #
-# *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the			 #
-# *  GNU General Public License for more details.							 #
-# *																			 #
+#	OpenMOGame2 프로젝트
+#	라이센스 : GNU GPL v3.0
+#	이 프로젝트는 XGP 2.9.4 에서 분할되었습니다.
+#	OpenMOGame2 를 사용하고 있는 MOGame2 서버는 http://mogame2.kr 이며 운영자는 민군입니다.
+#	프로젝트 마스터 : 민군(kmsr819@naver.com) 
+#	코더 : 민군(kmsr819@naver.com)
+#	서포터 : 이현종(010-2299-0754)
+#	디자이너 : 동이군, 니콜라이(ims130@hotmail.com)
+#	번역자 : 니콜라이(ims130@hotmail.com), 김종범(010-8458-6161), 엘리나, 워니, 이현종
+#	XGP Team, SHWorks 호스팅에 감사드립니다.
+#	연락 : 민군(kmsr819@naver.com)
 ##############################################################################
 
 $QryTableAks         = "CREATE TABLE `{{table}}` ( ";
 $QryTableAks        .= "`id` bigint(20) unsigned NOT NULL auto_increment, ";
-$QryTableAks        .= "`name` varchar(50) collate latin1_general_ci default NULL, ";
-$QryTableAks        .= "`teilnehmer` text collate latin1_general_ci, ";
-$QryTableAks        .= "`flotten` text collate latin1_general_ci, ";
+$QryTableAks        .= "`name` varchar(50) collate utf8_general_ci default NULL, ";
+$QryTableAks        .= "`teilnehmer` text collate utf8_general_ci, ";
+$QryTableAks        .= "`flotten` text collate utf8_general_ci, ";
 $QryTableAks        .= "`ankunft` int(32) default NULL, ";
 $QryTableAks        .= "`galaxy` int(2) default NULL, ";
 $QryTableAks        .= "`system` int(4) default NULL, ";
 $QryTableAks        .= "`planet` int(2) default NULL, ";
 $QryTableAks        .= "`planet_type` tinyint(1) default NULL, ";
-$QryTableAks        .= "`eingeladen` text character set latin1 default NULL, ";
+$QryTableAks        .= "`eingeladen` text character set utf8 default NULL, ";
 $QryTableAks        .= "PRIMARY KEY  (`id`) ";
 $QryTableAks        .= ") ENGINE=MyISAM;";
 
 $QryTableAlliance    = "CREATE TABLE `{{table}}` ( ";
 $QryTableAlliance   .= "`id` bigint(11) NOT NULL auto_increment, ";
-$QryTableAlliance   .= "`ally_name` varchar(32) character set latin1 default '', ";
-$QryTableAlliance   .= "`ally_tag` varchar(8) character set latin1 default '', ";
+$QryTableAlliance   .= "`ally_name` varchar(32) character set utf8 default '', ";
+$QryTableAlliance   .= "`ally_tag` varchar(8) character set utf8 default '', ";
 $QryTableAlliance   .= "`ally_owner` int(11) NOT NULL default '0', ";
 $QryTableAlliance   .= "`ally_register_time` int(11) NOT NULL default '0', ";
-$QryTableAlliance   .= "`ally_description` text character set latin1, ";
-$QryTableAlliance   .= "`ally_web` varchar(255) character set latin1 default '', ";
-$QryTableAlliance   .= "`ally_text` text character set latin1, ";
-$QryTableAlliance   .= "`ally_image` varchar(255) character set latin1 default '', ";
-$QryTableAlliance   .= "`ally_request` text character set latin1, ";
-$QryTableAlliance   .= "`ally_request_waiting` text character set latin1, ";
+$QryTableAlliance   .= "`ally_description` text character set utf8, ";
+$QryTableAlliance   .= "`ally_web` varchar(255) character set utf8 default '', ";
+$QryTableAlliance   .= "`ally_text` text character set utf8, ";
+$QryTableAlliance   .= "`ally_image` varchar(255) character set utf8 default '', ";
+$QryTableAlliance   .= "`ally_request` text character set utf8, ";
+$QryTableAlliance   .= "`ally_request_waiting` text character set utf8, ";
 $QryTableAlliance   .= "`ally_request_notallow` tinyint(4) NOT NULL default '0', ";
-$QryTableAlliance   .= "`ally_owner_range` varchar(32) character set latin1 default '', ";
-$QryTableAlliance   .= "`ally_ranks` text character set latin1, ";
+$QryTableAlliance   .= "`ally_owner_range` varchar(32) character set utf8 default '', ";
+$QryTableAlliance   .= "`ally_ranks` text character set utf8, ";
 $QryTableAlliance   .= "`ally_members` int(11) NOT NULL default '0', ";
 $QryTableAlliance   .= "PRIMARY KEY  (`id`) ";
 $QryTableAlliance   .= ") ENGINE=MyISAM;";
 
 $QryTableBanned      = "CREATE TABLE `{{table}}` ( ";
 $QryTableBanned     .= "`id` bigint(11) NOT NULL auto_increment, ";
-$QryTableBanned     .= "`who` varchar(64) character set latin1 NOT NULL default '', ";
-$QryTableBanned     .= "`theme` text character set latin1 NOT NULL, ";
-$QryTableBanned     .= "`who2` varchar(64) character set latin1 NOT NULL default '', ";
+$QryTableBanned     .= "`who` varchar(64) character set utf8 NOT NULL default '', ";
+$QryTableBanned     .= "`theme` text character set utf8 NOT NULL, ";
+$QryTableBanned     .= "`who2` varchar(64) character set utf8 NOT NULL default '', ";
 $QryTableBanned     .= "`time` int(11) NOT NULL default '0', ";
 $QryTableBanned     .= "`longer` int(11) NOT NULL default '0', ";
-$QryTableBanned     .= "`author` varchar(64) character set latin1 NOT NULL default '', ";
-$QryTableBanned     .= "`email` varchar(64) character set latin1 NOT NULL default '', ";
+$QryTableBanned     .= "`author` varchar(64) character set utf8 NOT NULL default '', ";
+$QryTableBanned     .= "`email` varchar(64) character set utf8 NOT NULL default '', ";
 $QryTableBanned     .= "KEY `ID` (`id`) ";
 $QryTableBanned     .= ") ENGINE=MyISAM;";
 
@@ -69,13 +64,13 @@ $QryTableBuddy      .= "`id` bigint(11) NOT NULL auto_increment, ";
 $QryTableBuddy      .= "`sender` int(11) NOT NULL default '0', ";
 $QryTableBuddy      .= "`owner` int(11) NOT NULL default '0', ";
 $QryTableBuddy      .= "`active` tinyint(3) NOT NULL default '0', ";
-$QryTableBuddy      .= "`text` text character set latin1, ";
+$QryTableBuddy      .= "`text` text character set utf8, ";
 $QryTableBuddy      .= "PRIMARY KEY  (`id`) ";
 $QryTableBuddy      .= ") ENGINE=MyISAM;";
 
 $QryTableConfig      = "CREATE TABLE `{{table}}` ( ";
-$QryTableConfig     .= "`config_name` varchar(64) character set latin1 NOT NULL default '', ";
-$QryTableConfig     .= "`config_value` text character set latin1 NOT NULL ";
+$QryTableConfig     .= "`config_name` varchar(64) character set utf8 NOT NULL default '', ";
+$QryTableConfig     .= "`config_value` text character set utf8 NOT NULL ";
 $QryTableConfig     .= ") ENGINE=MyISAM;";
 
 $QryInsertConfig     = "INSERT INTO `{{table}}` ";
@@ -89,10 +84,10 @@ $QryInsertConfig    .= "('resource_multiplier'   , '1'), ";
 $QryInsertConfig    .= "('Fleet_Cdr'             , '30'), ";
 $QryInsertConfig    .= "('Defs_Cdr'              , '30'), ";
 $QryInsertConfig    .= "('initial_fields'        , '163'), ";
-$QryInsertConfig    .= "('COOKIE_NAME'           , 'XGProyect'), ";
-$QryInsertConfig    .= "('game_name'             , 'XG Proyect'), ";
+$QryInsertConfig    .= "('COOKIE_NAME'           , 'OpenMOGame2'), ";
+$QryInsertConfig    .= "('game_name'             , 'OpenMOGame2'), ";
 $QryInsertConfig    .= "('game_disable'          , '1'), ";
-$QryInsertConfig    .= "('close_reason'          , '�En este momento el servidor se encuentra cerrado!'), ";
+$QryInsertConfig    .= "('close_reason'          , '서버 작업중입니다!'), ";
 $QryInsertConfig    .= "('metal_basic_income'    , '20'), ";
 $QryInsertConfig    .= "('crystal_basic_income'  , '10'), ";
 $QryInsertConfig    .= "('deuterium_basic_income', '0'), ";
@@ -104,10 +99,10 @@ $QryInsertConfig    .= "('LastSettedPlanetPos'   , '3'), ";
 $QryInsertConfig    .= "('noobprotection'        , '1'), ";
 $QryInsertConfig    .= "('noobprotectiontime'    , '5000'), ";
 $QryInsertConfig    .= "('noobprotectionmulti'   , '5'), ";
-$QryInsertConfig    .= "('forum_url'             , 'http://www.xtreme-gamez.com.ar/' ), ";
+$QryInsertConfig    .= "('forum_url'             , 'http://mogame2.kr/' ), ";
 $QryInsertConfig    .= "('adm_attack'         	 , '0' ), ";
 $QryInsertConfig    .= "('debug'                 , '0'), ";
-$QryInsertConfig    .= "('lang'                  , 'spanish'), ";
+$QryInsertConfig    .= "('lang'                  , 'korean'), ";
 $QryInsertConfig    .= "('stat'                  , '1'), ";
 $QryInsertConfig    .= "('stat_level'            , '2'), ";
 $QryInsertConfig    .= "('stat_last_update'      , '".time()."'), ";
@@ -119,10 +114,10 @@ $QryInsertConfig    .= ";";
 
 $QryTableErrors      = "CREATE TABLE `{{table}}` ( ";
 $QryTableErrors     .= "`error_id` bigint(11) NOT NULL auto_increment, ";
-$QryTableErrors     .= "`error_sender` varchar(32) character set latin1 NOT NULL default '0', ";
+$QryTableErrors     .= "`error_sender` varchar(32) character set utf8 NOT NULL default '0', ";
 $QryTableErrors     .= "`error_time` int(11) NOT NULL default '0', ";
-$QryTableErrors     .= "`error_type` varchar(32) character set latin1 NOT NULL default 'unknown', ";
-$QryTableErrors     .= "`error_text` text character set latin1, ";
+$QryTableErrors     .= "`error_type` varchar(32) character set utf8 NOT NULL default 'unknown', ";
+$QryTableErrors     .= "`error_text` text character set utf8, ";
 $QryTableErrors     .= "PRIMARY KEY  (`error_id`) ";
 $QryTableErrors     .= ") ENGINE=MyISAM;";
 
@@ -131,7 +126,7 @@ $QryTableFleets     .= "`fleet_id` bigint(11) NOT NULL auto_increment, ";
 $QryTableFleets     .= "`fleet_owner` int(11) NOT NULL default '0', ";
 $QryTableFleets     .= "`fleet_mission` int(11) NOT NULL default '0', ";
 $QryTableFleets     .= "`fleet_amount` bigint(11) NOT NULL default '0', ";
-$QryTableFleets     .= "`fleet_array` text character set latin1, ";
+$QryTableFleets     .= "`fleet_array` text character set utf8, ";
 $QryTableFleets     .= "`fleet_start_time` int(11) NOT NULL default '0', ";
 $QryTableFleets     .= "`fleet_start_galaxy` int(11) NOT NULL default '0', ";
 $QryTableFleets     .= "`fleet_start_system` int(11) NOT NULL default '0', ";
@@ -175,9 +170,9 @@ $QryTableMessages   .= "`message_owner` int(11) NOT NULL default '0', ";
 $QryTableMessages   .= "`message_sender` int(11) NOT NULL default '0', ";
 $QryTableMessages   .= "`message_time` int(11) NOT NULL default '0', ";
 $QryTableMessages   .= "`message_type` int(11) NOT NULL default '0', ";
-$QryTableMessages   .= "`message_from` varchar(48) character set latin1 default NULL, ";
-$QryTableMessages   .= "`message_subject` text character set latin1, ";
-$QryTableMessages   .= "`message_text` text character set latin1, ";
+$QryTableMessages   .= "`message_from` varchar(48) character set utf8 default NULL, ";
+$QryTableMessages   .= "`message_subject` text character set utf8, ";
+$QryTableMessages   .= "`message_text` text character set utf8, ";
 $QryTableMessages   .= "PRIMARY KEY  (`message_id`) ";
 $QryTableMessages   .= ") ENGINE=MyISAM;";
 
@@ -186,14 +181,14 @@ $QryTableNotes      .= "`id` bigint(11) NOT NULL auto_increment, ";
 $QryTableNotes      .= "`owner` int(11) default NULL, ";
 $QryTableNotes      .= "`time` int(11) default NULL, ";
 $QryTableNotes      .= "`priority` tinyint(1) default NULL, ";
-$QryTableNotes      .= "`title` varchar(32) character set latin1 default NULL, ";
-$QryTableNotes      .= "`text` text character set latin1, ";
+$QryTableNotes      .= "`title` varchar(32) character set utf8 default NULL, ";
+$QryTableNotes      .= "`text` text character set utf8, ";
 $QryTableNotes      .= "PRIMARY KEY  (`id`) ";
 $QryTableNotes      .= ") ENGINE=MyISAM;";
 
 $QryTablePlanets     = "CREATE TABLE `{{table}}` ( ";
 $QryTablePlanets    .= "`id` bigint(11) NOT NULL auto_increment, ";
-$QryTablePlanets    .= "`name` varchar(255) character set latin1 default 'Planeta Principal', ";
+$QryTablePlanets    .= "`name` varchar(255) character set utf8 default '모성', ";
 $QryTablePlanets    .= "`id_owner` int(11) default NULL, ";
 $QryTablePlanets    .= "`id_level` int(11) default NULL, ";
 $QryTablePlanets    .= "`galaxy` int(11) NOT NULL default '0', ";
@@ -203,13 +198,13 @@ $QryTablePlanets    .= "`last_update` int(11) default NULL, ";
 $QryTablePlanets    .= "`planet_type` int(11) NOT NULL default '1', ";
 $QryTablePlanets    .= "`destruyed` int(11) NOT NULL default '0', ";
 $QryTablePlanets    .= "`b_building` int(11) NOT NULL default '0', ";
-$QryTablePlanets    .= "`b_building_id` text character set latin1 NOT NULL, ";
+$QryTablePlanets    .= "`b_building_id` text character set utf8 NOT NULL, ";
 $QryTablePlanets    .= "`b_tech` int(11) NOT NULL default '0', ";
 $QryTablePlanets    .= "`b_tech_id` int(11) NOT NULL default '0', ";
 $QryTablePlanets    .= "`b_hangar` int(11) NOT NULL default '0', ";
-$QryTablePlanets    .= "`b_hangar_id` text character set latin1 NOT NULL, ";
+$QryTablePlanets    .= "`b_hangar_id` text character set utf8 NOT NULL, ";
 $QryTablePlanets    .= "`b_hangar_plus` int(11) NOT NULL default '0', ";
-$QryTablePlanets    .= "`image` varchar(32) character set latin1 NOT NULL default 'normaltempplanet01', ";
+$QryTablePlanets    .= "`image` varchar(32) character set utf8 NOT NULL default 'normaltempplanet01', ";
 $QryTablePlanets    .= "`diameter` int(11) NOT NULL default '12800', ";
 $QryTablePlanets    .= "`points` bigint(20) default '0', ";
 $QryTablePlanets    .= "`ranks` bigint(20) default '0', ";
@@ -290,9 +285,9 @@ $QryTablePlugins	.= ") ENGINE=MyISAM;";
 $QryTableRw          = "CREATE TABLE `{{table}}` ( ";
 $QryTableRw         .= "`id_owner1` int(11) NOT NULL default '0', ";
 $QryTableRw         .= "`id_owner2` int(11) NOT NULL default '0', ";
-$QryTableRw      	.= "`owners` VARCHAR(255) character set latin1 NOT NULL, ";
-$QryTableRw         .= "`rid` VARCHAR(72) character set latin1 NOT NULL, ";
-$QryTableRw         .= "`raport` text character set latin1 NOT NULL, ";
+$QryTableRw      	.= "`owners` VARCHAR(255) character set utf8 NOT NULL, ";
+$QryTableRw         .= "`rid` VARCHAR(72) character set utf8 NOT NULL, ";
+$QryTableRw         .= "`raport` text character set utf8 NOT NULL, ";
 $QryTableRw         .= "`a_zestrzelona` tinyint(3) unsigned NOT NULL default '0', ";
 $QryTableRw         .= "`time` int(10) unsigned NOT NULL default '0', ";
 $QryTableRw         .= "UNIQUE KEY `rid` (`rid`), ";
@@ -334,23 +329,23 @@ $QryTableStatPoints .= ") ENGINE=MyISAM;";
 
 $QryTableUsers       = "CREATE TABLE `{{table}}` ( ";
 $QryTableUsers      .= "`id` bigint(11) unsigned NOT NULL auto_increment PRIMARY KEY, ";
-$QryTableUsers      .= "`username` varchar(64) character set latin1 NOT NULL default '', ";
-$QryTableUsers      .= "`password` varchar(64) character set latin1 NOT NULL default '', ";
-$QryTableUsers      .= "`email` varchar(64) character set latin1 NOT NULL default '', ";
-$QryTableUsers      .= "`email_2` varchar(64) character set latin1 NOT NULL default '', ";
+$QryTableUsers      .= "`username` varchar(64) character set utf8 NOT NULL default '', ";
+$QryTableUsers      .= "`password` varchar(64) character set utf8 NOT NULL default '', ";
+$QryTableUsers      .= "`email` varchar(64) character set utf8 NOT NULL default '', ";
+$QryTableUsers      .= "`email_2` varchar(64) character set utf8 NOT NULL default '', ";
 $QryTableUsers      .= "`authlevel` tinyint(4) NOT NULL default '0', ";
 $QryTableUsers      .= "`id_planet` int(11) NOT NULL default '0', ";
 $QryTableUsers      .= "`galaxy` int(11) NOT NULL default '0', ";
 $QryTableUsers      .= "`system` int(11) NOT NULL default '0', ";
 $QryTableUsers      .= "`planet` int(11) NOT NULL default '0', ";
 $QryTableUsers      .= "`current_planet` int(11) NOT NULL default '0', ";
-$QryTableUsers      .= "`user_lastip` varchar(16) character set latin1 NOT NULL default '', ";
-$QryTableUsers      .= "`ip_at_reg` varchar(16) character set latin1 NOT NULL default '', ";
-$QryTableUsers      .= "`user_agent` text character set latin1 NOT NULL, ";
-$QryTableUsers      .= "`current_page` text character set latin1 NOT NULL, ";
+$QryTableUsers      .= "`user_lastip` varchar(16) character set utf8 NOT NULL default '', ";
+$QryTableUsers      .= "`ip_at_reg` varchar(16) character set utf8 NOT NULL default '', ";
+$QryTableUsers      .= "`user_agent` text character set utf8 NOT NULL, ";
+$QryTableUsers      .= "`current_page` text character set utf8 NOT NULL, ";
 $QryTableUsers      .= "`register_time` int(11) NOT NULL default '0', ";
 $QryTableUsers      .= "`onlinetime` int(11) NOT NULL default '0', ";
-$QryTableUsers      .= "`dpath` varchar(255) character set latin1 NOT NULL default '', ";
+$QryTableUsers      .= "`dpath` varchar(255) character set utf8 NOT NULL default '', ";
 $QryTableUsers      .= "`design` tinyint(4) NOT NULL default '1', ";
 $QryTableUsers      .= "`noipcheck` tinyint(4) NOT NULL default '1', ";
 $QryTableUsers      .= "`planet_sort` tinyint(1) NOT NULL default '0', ";
@@ -368,7 +363,7 @@ $QryTableUsers      .= "`urlaubs_modus` tinyint(4) NOT NULL default '0', ";
 $QryTableUsers      .= "`urlaubs_until` int(11) NOT NULL default '0', ";
 $QryTableUsers      .= "`db_deaktjava` bigint(19) NOT NULL default '0', ";
 $QryTableUsers      .= "`new_message` int(11) NOT NULL default '0', ";
-$QryTableUsers      .= "`fleet_shortcut` text character set latin1, ";
+$QryTableUsers      .= "`fleet_shortcut` text character set utf8, ";
 $QryTableUsers      .= "`b_tech_planet` int(11) NOT NULL default '0', ";
 $QryTableUsers      .= "`spy_tech` int(11) NOT NULL default '0', ";
 $QryTableUsers      .= "`computer_tech` int(11) NOT NULL default '0', ";
@@ -387,9 +382,9 @@ $QryTableUsers      .= "`intergalactic_tech` int(11) NOT NULL default '0', ";
 $QryTableUsers      .= "`expedition_tech` int(11) NOT NULL default '0', ";
 $QryTableUsers      .= "`graviton_tech` int(11) NOT NULL default '0', ";
 $QryTableUsers      .= "`ally_id` int(11) NOT NULL default '0', ";
-$QryTableUsers      .= "`ally_name` varchar(32) character set latin1 default '', ";
+$QryTableUsers      .= "`ally_name` varchar(32) character set utf8 default '', ";
 $QryTableUsers      .= "`ally_request` int(11) NOT NULL default '0', ";
-$QryTableUsers      .= "`ally_request_text` text character set latin1, ";
+$QryTableUsers      .= "`ally_request_text` text character set utf8, ";
 $QryTableUsers      .= "`ally_register_time` int(11) NOT NULL default '0', ";
 $QryTableUsers      .= "`ally_rank_id` int(11) NOT NULL default '0', ";
 $QryTableUsers      .= "`current_luna` int(11) NOT NULL default '0', ";
