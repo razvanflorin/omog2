@@ -343,51 +343,24 @@ function ShowFleet3Page($CurrentUser, $CurrentPlanet)
 		message($lang['fl_admins_cannot_be_attacked'], "game." . $phpEx . "?page=fleet",2);
 
 	if ($fleet_group_mr != 0)
-	{
-		$AksStartTime = mysql_fetch_array(doquery("SELECT MAX(`fleet_start_time`) AS Start, MAX(`fleet_end_time`) AS End FROM {{table}} WHERE `fleet_group` = '". $fleet_group_mr . "';", 'fleets'));
+        {
+            $AksStartTime = doquery("SELECT MAX(`fleet_start_time`) AS Start FROM {{table}} WHERE `fleet_group` = '". $fleet_group_mr . "';", "fleets", true);
 
-		if ($AksStartTime['Start'] > $fleet['start_time'])
-		{
-			$fleet['start_time'] 	= $AksStartTime['Start'] + 1;
-			$fleet['end_time'] 		= $AksStartTime['End'] + 1;
-		}
-		else
-		{
-			$AksTime = mysql_fetch_array(doquery("SELECT fleet_start_time, fleet_end_time FROM {{table}} WHERE `fleet_group` = '". $fleet_group_mr . "' AND `fleet_mission` = '1';", 'fleets'));
-
-			if ($AksTime['fleet_start_time'] < $fleet['start_time'])
-			{
-				$QryUpdateFleets = "UPDATE {{table}} SET ";
-				$QryUpdateFleets .= "`fleet_start_time` = '". $fleet['start_time'] ."', ";
-				$QryUpdateFleets .= "`fleet_end_time` = '". $fleet['end_time'] ."' ";
-				$QryUpdateFleets .= "WHERE ";
-				$QryUpdateFleets .= "`fleet_group` = '". $fleet_group_mr ."' AND ";
-				$QryUpdateFleets .= "`fleet_mission` = '1';";
-				doquery($QryUpdateFleets, "fleets");
-				$SelectFleets = doquery("SELECT * FROM {{table}} WHERE `fleet_group` = '". $fleet_group_mr . "' AND `fleet_mission` = '2' ORDER BY `fleet_id` ASC ;", 'fleets');
-				$nb = mysql_num_rows($SelectFleets);
-				$i = 0;
-				if ($nb > 0)
-				{
-					while ($row = mysql_fetch_array($SelectFleets))
-					{
-						$i++;
-						$row['fleet_start_time'] = $fleet['start_time'] + $i;
-						$row['fleet_end_time'] = $fleet['end_time'] + $i;
-						$QryUpdateFleets = "UPDATE {{table}} SET ";
-						$QryUpdateFleets .= "`fleet_start_time` = '". $row['fleet_start_time'] ."', ";
-						$QryUpdateFleets .= "`fleet_end_time` = '". $row['fleet_end_time'] ."' ";
-						$QryUpdateFleets .= "WHERE ";
-						$QryUpdateFleets .= "`fleet_id` = '". $row['fleet_id'] ."';";
-						doquery($QryUpdateFleets, "fleets");
-					}
-				}
-
-				$fleet['start_time'] = $fleet['start_time'] + $nb + 1;
-				$fleet['end_time'] = $fleet['end_time'] + $nb + 1;
-			}
-		}
-	}
+            if ($AksStartTime['Start'] >= $fleet['start_time'])
+            {
+                $fleet['start_time']     = $AksStartTime['Start'];
+                $fleet['end_time']        += $AksStartTime['Start'] - $fleet['start_time'];
+            }
+            else
+            {
+                $QryUpdateFleets = "UPDATE {{table}} SET ";
+                $QryUpdateFleets .= "`fleet_start_time` = '". $fleet['start_time'] ."', ";
+                $QryUpdateFleets .= "`fleet_end_time` = fleet_end_time + '".($fleet['start_time'] - $AksStartTime['Start'])."' ";
+                $QryUpdateFleets .= "WHERE ";
+                $QryUpdateFleets .= "`fleet_group` = '". $fleet_group_mr ."';";
+                doquery($QryUpdateFleets, "fleets");
+            }
+        }  
 
 	$QryInsertFleet  = "INSERT INTO {{table}} SET ";
 	$QryInsertFleet .= "`fleet_owner` = '". $CurrentUser['id'] ."', ";
