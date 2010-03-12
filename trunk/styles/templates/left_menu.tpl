@@ -12,7 +12,7 @@ function f(target_url,win_name) {
 
 <div id='menu'>
 
-<p style="width:110px;"><NOBR>{servername} (<a href="game.php?page=changelog">{version}</a>)</NOBR></p>
+<p style="width:110px;"><NOBR>{servername} (<a href="game.php?page=changelog">버전정보</a>)</NOBR></p>
 <table width="110" cellspacing="0" cellpadding="0">
  <tr>
   <td><img src="{dpath}gfx/ogame-produktion.jpg" width="110" height="40" /></td>
@@ -129,11 +129,18 @@ function f(target_url,win_name) {
     </font></div>
   </td>
  </tr>
+ <tr>
+  <td>
+   <div align="center"><font color="#FFFFFF">
+    <a href="http://kmsr819.shworks.com/servies/mogame2" target="_blank">사이트</a>
+   </font></div>
+  </td>
+ </tr>
 
   <tr>
   <td>
    <div align="center"><font color="#FFFFFF">
-    <a href="{forum_url}" target="_blank">{lm_forums}</a>
+    <a href="http://mogame2.kr" target="_blank">사이트</a>
    </font></div>
   </td>
  </tr>
@@ -165,7 +172,27 @@ function f(target_url,win_name) {
     </font></div>
   </td>
  </tr>
- 
+ <tr>
+  <td>
+   <div align="center"><font color="#FFFFFF">
+     <a href='http://kmsr819.shworks.com/servies/mogame2/board/board.php?id=cnews&articleNo=3&page=1&searchText=&clickCategory='>규정</a>
+    </font></div>
+  </td>
+ </tr>
+  <tr>
+  <td>
+   <div align="center"><font color="#FFFFFF">
+     <a href='http://kmsr819.shworks.com/servies/mogame2/board/board.php?id=cnews&articleNo=2&page=1&searchText=&clickCategory='>튜토리얼</a>
+    </font></div>
+  </td>
+ </tr>
+  <tr>
+  <td>
+   <div align="center"><font color="#FFFFFF">
+     <a href='http://kmsr819.shworks.com/servies/mogame2/webirc.php'>채팅</a>
+    </font></div>
+  </td>
+ </tr>
  <tr>
   <td><img src="{dpath}/gfx/user-menu.jpg" width="110" height="35"></td>
  </tr>
@@ -220,7 +247,7 @@ function f(target_url,win_name) {
  <tr>
   <td>
    <div align="center"><font color="#FFFFFF">
-     <a href="#" title="Copyright (C) 2008 - 2010 GNU General Public License">&copy; 2008 - 2010</a>
+     <a href="http://kmsr819.shworks.com/servies/mogame2/board/board.php?id=cnews&articleNo=7&page=1&clickCategory=">by Mingoon</a>
     </font></div>
   </td>
  </tr>
