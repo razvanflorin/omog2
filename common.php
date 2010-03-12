@@ -56,7 +56,7 @@ if (INSTALL != true)
 		$game_config[$row['config_name']] = $row['config_value'];
 	}
 
-	define('DEFAULT_LANG'	, (	$game_config['lang'] 	== ''	) ? "spanish" : 	$game_config['lang']	);
+	define('DEFAULT_LANG'	, (	$game_config['lang'] 	== ''	) ? "korean" : 	$game_config['lang']	);
 	define('VERSION'		, (	$game_config['VERSION'] == ''	) ? "		" : "v".$game_config['VERSION']	);
 
 	includeLang('INGAME');
@@ -125,7 +125,7 @@ if (INSTALL != true)
 		{
 			$dpath     = (!$user["dpath"]) ? DEFAULT_SKINPATH : $user["dpath"];
 		}
-        //We include the plugin system 0.3
+        //플러그인 시스템 0.3이 내장되어 있음^^
         include($xgp_root . 'includes/plugins.'.$phpEx);
 
 		include($xgp_root . 'includes/functions/SetSelectedPlanet.' . $phpEx);
