@@ -1,5 +1,14 @@
-This is a Subversion repository; use the 'svnadmin' tool to examine
-it.  Do not add, delete, or modify files here unless you know how
-to avoid corrupting the repository.
+OpenMOGame2
+작업노트(작업 기준 : XGP2.9.4)
+작성자 : 민군
 
-Visit http://subversion.tigris.org/ for more information.
+1. 설치하기
+일단 업로드 후 게임 폴더 퍼미션을 707, config.php를 777로 맞춘다.
+그리고 설치한다.
+설치후 install 폴더 삭제후 config.php 퍼미션을 707로 바꾼다.
+
+2. 서버 텍스트 설정
+서버 이름같은거나 서버중지 사유같은 설정은 한글입력하면 글씨 다깨짐
+그럴땐 config 테이블(mysql db)에 들어가서 config_value 필드의 인코딩을 unicode_ci로 바꾸면됨.
+글구 포럼 주소를 설정해도 안바뀌는데.. mysql db에서 보면 잘 바뀌어있음
+
