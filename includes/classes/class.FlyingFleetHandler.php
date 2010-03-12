@@ -2545,6 +2545,7 @@ class FlyingFleetHandler
 				214 => 5.0,
 				215 => 3.2,
 				216 => 3.5,
+				230 => 4.5,
 				);
 
 				$RatioGain = array (
@@ -2563,6 +2564,7 @@ class FlyingFleetHandler
 				214 => 0.03125,
 				215 => 0.0625,
 				216 => 0.03125,
+				230 => 0.03125,
 				);
 
 				$FleetStayDuration 	= ($FleetRow['fleet_end_stay'] - $FleetRow['fleet_start_time']) / 3600;
@@ -2657,7 +2659,7 @@ class FlyingFleetHandler
 				elseif ($Hasard >= 8 && $Hasard < 11)
 				{
 					$FoundChance = $FleetPoints / $FleetCount;
-					for ($Ship = 202; $Ship < 216; $Ship++)
+					for ($Ship = 202; $Ship < 231; $Ship++)
 					{
 						if ($LaFlotte[$Ship] != 0)
 						{

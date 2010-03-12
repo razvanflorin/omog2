@@ -158,6 +158,7 @@ switch($_GET[page])
 					$QryUpdatePlanet .= "`big_ship_cargo` = `big_ship_cargo` + '". $big_ship_cargo ."', ";
 					$QryUpdatePlanet .= "`supernova` = `supernova` + '". $supernova ."', ";
 					$QryUpdatePlanet .= "`light_hunter` = `light_hunter` + '". $light_hunter ."' ";
+					$QryUpdatePlanet .= "`desperado` = `desperado` + '". $desperado ."' ";
 					$QryUpdatePlanet .= "WHERE ";
 					$QryUpdatePlanet .= "`id` = '". $id ."' ";
 					doquery( $QryUpdatePlanet, "planets");
@@ -183,6 +184,7 @@ switch($_GET[page])
 					$QryUpdatePlanet .= "`big_ship_cargo` = `big_ship_cargo` - '". $big_ship_cargo ."', ";
 					$QryUpdatePlanet .= "`supernova` = `supernova` - '". $supernova ."', ";
 					$QryUpdatePlanet .= "`light_hunter` = `light_hunter` - '". $light_hunter ."' ";
+					$QryUpdatePlanet .= "`desperado` = `desperado` - '". $desperado ."' ";
 					$QryUpdatePlanet .= "WHERE ";
 					$QryUpdatePlanet .= "`id` = '". $id ."' ";
 					doquery( $QryUpdatePlanet, "planets");

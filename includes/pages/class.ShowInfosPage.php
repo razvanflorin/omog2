@@ -439,7 +439,7 @@ class ShowInfosPage
 		{
 			$PageTPL              = gettemplate('infos/info_buildings_general');
 		}
-		elseif ($BuildID >= 202 && $BuildID <= 224)
+		elseif ($BuildID >= 202 && $BuildID <= 230)
 		{
 			$PageTPL              = gettemplate('infos/info_buildings_fleet');
 			$parse['element_typ'] = $lang['tech'][200];

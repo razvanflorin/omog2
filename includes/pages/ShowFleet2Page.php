@@ -85,7 +85,8 @@ function ShowFleet2Page($CurrentUser, $CurrentPlanet)
 			$_POST['ship223'] >= 1 ||
 			$_POST['ship224'] >= 1 ||
 			$_POST['ship225'] >= 1 ||
-		$_POST['ship226'] >= 1) {
+			$_POST['ship226'] >= 1 ||
+		$_POST['ship230'] >= 1) {
 
 			if (!$YourPlanet)
 				$missiontype[1] = $lang['type_mission'][1];
