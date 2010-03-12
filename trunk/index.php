@@ -80,6 +80,14 @@ switch($_GET[page])
 		}
 	break;
 	default:
+	$Sum    =    doquery("SELECT COUNT(*) AS `fleets` FROM {{table}} WHERE 1", "fleets", true);
+        $parse['suma']    =    $Sum['fleets'];  
+        $reg_users                = doquery('SELECT COUNT(*) as `players` FROM {{table}} WHERE 1', 'users', true);
+        $parse['users_amount']     = $reg_users['players'];
+        $last_user                = doquery('SELECT `username` FROM {{table}} ORDER BY `register_time` DESC', 'users', true);
+        $parse['last_user']        = $last_user['username'];
+        $online_users             = doquery("SELECT COUNT(DISTINCT(id)) as `onlinenow` FROM {{table}} WHERE `onlinetime` > '" . (time()-900) ."';", 'users', true);
+        $parse['online_users']     = $online_users['onlinenow'];  
 		if ($_POST)
 		{
 			$login = doquery("SELECT `id`,`username`,`password`,`banaday` FROM {{table}} WHERE `username` = '" . mysql_escape_string($_POST['username']) . "' AND `password` = '" . md5($_POST['password']) . "' LIMIT 1", "users", true);
