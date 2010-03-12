@@ -122,7 +122,7 @@ function consumption2() {
 	var consumption;
 	var basicConsumption = 0;
 
-	for (i = 200; i < 220; i++) {
+	for (i = 200; i < 229; i++) {
 		if (document.getElementsByName("ship" + i)[0]) {
 			basicConsumption = basicConsumption +
 			document.getElementsByName("consumption" + i)[0].value
@@ -604,7 +604,7 @@ function hideResources() {
 	document.getElementsByName('holdingtime')[0].disabled = true;
 }
 
-function setShips(s16,s17,s18,s19,s20,s21,s22,s23,s24,s25,s27,s28,s29,s30,s31,s32,s33){
+function setShips(s16,s17,s18,s19,s20,s21,s22,s23,s24,s25,s27,s28,s29,s30,s31,s32,s33,s34){
 
 	setNumber('202',s16);
 	setNumber('203',s17);
@@ -623,6 +623,7 @@ function setShips(s16,s17,s18,s19,s20,s21,s22,s23,s24,s25,s27,s28,s29,s30,s31,s3
 	setNumber('217',s31);
 	setNumber('218',s32);
 	setNumber('219',s33);
+	setNumber('230',s34);
 
 }
 
