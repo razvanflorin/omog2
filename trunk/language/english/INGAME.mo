@@ -1,5 +1,4 @@
 <?php
-
 //SERVER GENERALS
 $lang['Metal']								= 'Metal';
 $lang['Crystal']							= 'Crystal';
@@ -8,7 +7,6 @@ $lang['Darkmatter']							= 'Dark Matter';
 $lang['Energy']								= 'Energy';
 $lang['Messages']							= 'Messages';
 $lang['write_message']						= 'Write Message';
-
 $lang['type_mission'][1]  					= 'Attack';
 $lang['type_mission'][2]  					= 'Groupal Attack';
 $lang['type_mission'][3]  					= 'Transport';
@@ -19,18 +17,15 @@ $lang['type_mission'][7]  					= 'Colonize';
 $lang['type_mission'][8]  					= 'Recycle';
 $lang['type_mission'][9]  					= 'Destroy';
 $lang['type_mission'][15] 					= 'Expedition';
-
 $lang['user_level'] = array (
 	'0' => 'Player',
 	'1' => 'Moderator',
 	'2' => 'Operator',
 	'3' => 'Administrator',
 );
-
 // GAME.PHP
 $lang['see_you_soon']						= 'See you soon!';
 $lang['page_doesnt_exist']					= 'The page you requested does not exist';
-
 //SHORT NAMES FOR COMBAT REPORTS
 $lang['tech_rc'] = array (
 202 => "S. cargo",
@@ -48,7 +43,6 @@ $lang['tech_rc'] = array (
 214 => "Deathstar",
 215 => "Battlecru.",
 216 => "SuperNova",
-
 401 => "Rocket L.",
 402 => "Light L.",
 403 => "Heavy L.",
@@ -59,12 +53,10 @@ $lang['tech_rc'] = array (
 408 => "L. Dome",
 409 => 'P. Protector',
 );
-
 //----------------------------------------------------------------------------//
 //TOPNAV
 $lang['tn_vacation_mode']					= 'Vacation mode active until ';
 $lang['tn_delete_mode']						= 'Your account is in erase mode. The same will be deleted the ';
-
 //----------------------------------------------------------------------------//
 //LEFT MENU
 $lang['lm_overview']						= 'Overview';
@@ -95,7 +87,6 @@ $lang['lm_game_speed']						= 'Game';
 $lang['lm_fleet_speed']						= 'Fleets';
 $lang['lm_resources_speed']					= 'Resources';
 $lang['lm_queues']							= 'Queues';
-
 //----------------------------------------------------------------------------//
 //OVERVIEW
 $lang['ov_newname_error']					= 'You entered an illegal character. You can only enter alphanumeric characters.';
@@ -132,7 +123,6 @@ $lang['ov_actions']							= 'Functions';
 $lang['ov_planet_rename']					= 'rename';
 $lang['ov_planet_rename_action']			= 'rename';
 $lang['ov_abandon_planet_not_possible']		= 'It\'s not possible abandon a planet where are fleets moving';
-
 //----------------------------------------------------------------------------//
 //GALAXY
 $lang['gl_no_deuterium_to_view_galaxy']		= 'You don\'t have enough deuterium!';
@@ -191,13 +181,11 @@ $lang['gl_planet_destroyed']				= 'Planet destroyed';
 $lang['gl_player']							= '';
 $lang['gl_in_the_rank']						= ' ranked ';
 $lang['gl_stat']							= 'Statistics';
-
 //----------------------------------------------------------------------------//
 //PHALANX
 $lang['px_no_deuterium']					= 'You don\'t have enough deuterium!';
 $lang['px_scan_position']					= 'Scan position';
 $lang['px_fleet_movement']					= 'Current Fleet Movement';
-
 //----------------------------------------------------------------------------//
 //IMPERIUM
 $lang['iv_imperium_title']					= 'Empire vision';
@@ -306,7 +294,6 @@ $lang['fl_sac_of_fleet']					= 'ACS fleet';
 $lang['fl_modify_sac_name']					= 'Change the name of the ACS';
 $lang['fl_members_invited']					= 'Members invited';
 $lang['fl_invite_members']					= 'Invite other members';
-
 //----------------------------------------------------------------------------//
 //BUILDINGS - RESEARCH - SHIPYARD - DEFENSES
 $lang['bd_dismantle']						= 'Deconstruct';
@@ -336,7 +323,6 @@ $lang['bd_operating']						= '(Working)';
 $lang['bd_continue']						= 'continue';
 $lang['bd_ready']							= 'finished';
 $lang['bd_finished']						= 'finished';
-
 //----------------------------------------------------------------------------//
 //RESOURCES
 $lang['rs_amount']							= 'quantity';
@@ -348,7 +334,6 @@ $lang['rs_calculate']						= 'calculate';
 $lang['rs_sum']								= 'Total:';
 $lang['rs_daily']							= 'Res per day:';
 $lang['rs_weekly']							= 'Res per week:';
-
 //----------------------------------------------------------------------------//
 //OFFICIERS
 $lang['of_recruit']							= 'Recruit';
@@ -356,7 +341,6 @@ $lang['of_max_lvl']							= 'Maximum level';
 $lang['of_available_points']				= 'Available Points:';
 $lang['of_points_per_thousand_darkmatter']	= '(1 point for every 1000 of dark matter)';
 $lang['of_lvl']								= 'level';
-
 //----------------------------------------------------------------------------//
 //TRADER
 $lang['tr_only_positive_numbers']			= 'You may only use positive numbers!';
@@ -376,12 +360,10 @@ $lang['tr_amount']							= 'Quantity';
 $lang['tr_quota_exchange']					= 'Exchange rate';
 $lang['tr_exchange']						= 'Swap';
 $lang['tr_darkmatter_needed']				= 'You need at least <font color="#FF8900">%s of dark matter</font> too visit the dealer.';
-
 //----------------------------------------------------------------------------//
 //TECHTREE
 $lang['tt_requirements']					= 'Requirements';
 $lang['tt_lvl']								= 'level ';
-
 $lang['tech'] = array(
 0 => "Buildings",
 1 => "Metal Mine",
@@ -403,7 +385,6 @@ $lang['tech'] = array(
 42 => "Sensor Phalanx",
 43 => "Jump Gate",
 44 => "Missile Silo",
-
 100 => "Research",
 106 => "Espionage Technology",
 108 => "Computer Technology",
@@ -421,7 +402,6 @@ $lang['tech'] = array(
 123 => "Intergalactic Research Network",
 124 => "Expedition Technology",
 199 => "Graviton Technology",
-
 200 => "Ships",
 202 => "Small Cargo",
 203 => "Large Cargo",
@@ -438,7 +418,6 @@ $lang['tech'] = array(
 214 => "Deathstar",
 215 => "Battlecruiser",
 216 => 'SuperNova',
-
 400 => "Defense",
 401 => "Rocket Launcher",
 402 => "Light Laser",
@@ -451,7 +430,6 @@ $lang['tech'] = array(
 409 => 'Planet Protector',
 502 => "Anti-Ballistic Missiles",
 503 => "Interplanetary Missiles",
-
 600 => "Official",
 601 => "Geologist",
 602 => "Admiral",
@@ -469,7 +447,6 @@ $lang['tech'] = array(
 614 => "Conqueror",
 615 => "Emperor",
 );
-
 $lang['res']['descriptions'] = array(
 1 => "Used in the extraction of metal ore, metal mines are of primary importance to all emerging and established empires.",
 2 => "Crystals are the main resource used to build electronic circuits and form certain alloy compounds.",
@@ -489,12 +466,10 @@ $lang['res']['descriptions'] = array(
 42 => "",
 43 => "",
 44 => "El silo es un lugar de almacenamiento y lanzamiento de misiles planetarios.",
-
 106 => "Usando esta tecnolog&iacute;a, puede obtenerse informaci&oacute;n sobre otros planetas.",
 108 => "Cuanto m&aacute;s elevado sea el nivel de tecnolog&iacute;a de computaci&oacute;n, m&aacute;s flotas podr&aacute;s controlar simultaneamente. Cada nivel adicional de esta tecnologia, aumenta el numero de flotas en 1.",
 109 => "Este tipo de tecnolog&iacute;a incrementa la eficiencia de tus sistemas de armamento. Cada mejora de la tecnolog&iacute;a militar a&ntilde;ade un 10% de potencia a la base de da&ntilde;o de cualquier arma disponible.",
-110 => "La tecnolog&iacute;a de defensa se usa para generar un escudo de part&iacute;culas protectoras alrededor de tus estructuras.
-Cada nivel de esta tecnolog&iacute;a aumenta el escudo efectivo en un 10% (basado en el nivel de una estructura dada).",
+110 => "La tecnolog&iacute;a de defensa se usa para generar un escudo de part&iacute;culas protectoras alrededor de tus estructuras.Cada nivel de esta tecnolog&iacute;a aumenta el escudo efectivo en un 10% (basado en el nivel de una estructura dada).",
 111 => "Las aleaciones altamente sofisticadas ayudan a incrementar el blindaje de una nave a&ntilde;adiendo el 10% de su fuerza en cada nivel a la fuerza base.",
 113 => "Entendiendo la tecnolog&iacute;a de diferentes tipos de energ&iacute;a, muchas investigaciones nuevas y avanzadas pueden ser adaptadas. La tecnolog&iacute;a de energ&iacute;a es de gran importancia para un laboratorio de investigaci&oacute;n moderno.",
 114 => "Incorporando la cuarta y quinta dimensi&oacute;n en la tecnolog&iacute;a de propulsi&oacute;n, se puede disponer de un nuevo tipo de motor; que es m&aacute;s eficiente y usa menos combustible que los convencionales.",
@@ -507,7 +482,6 @@ Cada nivel de esta tecnolog&iacute;a aumenta el escudo efectivo en un 10% (basad
 123 => "Los cient&iacute;ficos de tus planetas pueden comunicarse entre ellos a trav&eacute;s de esta red.",
 124 => "Las naves son equipadas con equipo cientifico para tomar datos en largas expediciones.",
 199 => "A trav&eacute;s del disparo de part&iacute;culas concentradas de gravit&oacute;n se genera un campo gravitacional artificial con suficiente potencia y poder de atracci&oacute;n para destruir no solo naves, sino lunas enteras.",
-
 202 => "Las naves peque&ntilde;as de carga son naves muy &aacute;giles usadas para transportar recursos desde un planeta a otro",
 203 => "La nave grande de carga es una versi&oacute;n avanzada de las naves peque&ntilde;as de carga, permitiendo as&iacute; una mayor capacidad de almacenamiento y velocidades m&aacute;s altas gracias a un mejor sistema de propulsi&oacute;n.",
 204 => "El cazador ligero es una nave maniobrable que puedes encontrar en casi cualquier planeta. El coste no es particularmente alto, pero asimismo el escudo y la capacidad de carga son muy bajas.",
@@ -523,7 +497,6 @@ Cada nivel de esta tecnolog&iacute;a aumenta el escudo efectivo en un 10% (basad
 214 => "No hay nada tan grande y peligroso como una estrella de la muerte aproxim&aacute;ndose.",
 215 => "El Acorazado es una nave altamente especializada en la intercepci&oacute;n de flotas hostiles.",
 216 => "La SuperNova es la nave más poderosa nunca antes creada, con un gran poder ofensivo que ninguna nave podra resistir a su ataque.",
-
 401 => "El lanzamisiles es un sistema de defensa sencillo, pero barato.",
 402 => "Por medio de un rayo l&aacute;ser concentrado, se puede provocar m&aacute;s da&ntilde;o que con las armas bal&iacute;sticas normales.",
 403 => "Los l&aacute;sers grandes posee una mejor salida de energ&iacute;a y una mayor integridad estructural que los l&aacute;sers peque&ntilde;os.",
@@ -535,7 +508,6 @@ Cada nivel de esta tecnolog&iacute;a aumenta el escudo efectivo en un 10% (basad
 409 => "La maxima proteccion para los planetas",
 502 => "Los misiles de intercepci&oacute;n destruyen los misiles interplanetarios.",
 503 => "Los misiles interplanetarios destruyen los sistemas de defensa del enemigo.",
-
 601 => 'Geologist is an expert in mining and astro crystallography. Attend their equipment in metallurgy and chemistry and is also responsible for interplanetary communications to optimize the use and refinement of raw material throughout the empire.<br><br><strong><font color="lime">+5% de producción. Nivel Máx. 20</font></strong>',
 602 => 'The Admiral is an experienced veteran and a skillful strategist. The hardest battle is able to get an idea of the situation and contact their admirals subordinates. A wise emperor could rely on their help during the fighting.<br><br><strong><font color="lime">+5% escudo en naves. Nivel Máx. 20</font></strong>',
 603 => 'The Engineer is a specialist in energy management. In peacetime, it increases the energy of all the colonies. In case of attack, ensuring the supply of energy to the cannons, and avoid a possible overload, leading to a reduction in defense lost battle.<br><br><strong><font color="lime">+5% de energia. Nivel Máx. 10</font></strong>',
@@ -552,7 +524,6 @@ Cada nivel de esta tecnolog&iacute;a aumenta el escudo efectivo en un 10% (basad
 614 => 'The conqueror is a member of the Army, it has the ability to navigate a particular type of ship that no one else could do or take off.<br><br><strong><font color="lime">Desbloquea la SuperNova. Nivel Máx. 1</font></strong>',
 615 => 'The emperor placed under his command available to all officers in the empire, combining their skills to dominate the universe and to become an opponent almost Invensil.<br><br><strong><font color="lime">Desbloquea la destrucción planetaria. Nivel Máx. 1</font></strong>',
 );
-
 //----------------------------------------------------------------------------//
 //INFOS
 $lang['in_jump_gate_done']					= 'The jump gate was used, the next jump can be made in: ';
@@ -586,7 +557,6 @@ $lang['in_jump_gate_jump']					= 'Jump';
 $lang['in_destroy']     					= 'Destroy:';
 $lang['in_needed']      					= 'Requires';
 $lang['in_dest_durati'] 					= 'Destruction time';
-
 // -------------------------- MINES ------------------------------------------------------------------------------------------------------//
 $lang['info'][1]['name']          			= "Metal Mine";
 $lang['info'][1]['description']   			= "Metal is the primary resource used in the foundation of your Empire. At greater depths, the mines can produce more output of viable metal for use in the construction of buildings, ships, defense systems, and research. As the mines drill deeper, more energy is required for maximum production. As metal is the most abundant of all resources available, its value is considered to be the lowest of all resources for trading.";
@@ -594,13 +564,11 @@ $lang['info'][2]['name']          			= "Crystal Mine";
 $lang['info'][2]['description']   			= "Crystals are the main resource used to build electronic circuits for computers and other electronic circuits and form certain alloy compounds for shields. Compared to the metal production process, the processing of raw crystalline structures into industrial crystals requires special processing. As such, more energy is required to process the raw crystal than needed for metal. Development of ships and buildings, and specialized research upgrades, require a certain quantity of crystals.";
 $lang['info'][3]['name']          			= "Deuterium Synthesizer";
 $lang['info'][3]['description']   			= "Deuterium is also called heavy hydrogen. It is a stable isotope of hydrogen with a natural abundance in the oceans of colonies of approximately one atom in 6500 of hydrogen (~154 PPM). Deuterium thus accounts for approximately 0.015% (on a weight basis, 0.030%) of all. Deuterium is processed by special synthesizers which can separate the water from the Deuterium using specially designed centrifuges. The upgrade of the synthesizer allows for increasing the amount of Deuterium deposits processed. Deuterium is used when carrying out sensor phalanx scans, viewing galaxies, as fuel for ships, and performing specialized research upgrades.";
-
 // -------------------------- ENERGY ----------------------------------------------------------------------------------------------------//
 $lang['info'][4]['name']          			= "Solar Plant";
 $lang['info'][4]['description']   			= "Gigantic solar arrays are used to generate power for the mines and the deuterium synthesizer. As the solar plant is upgraded, the surface area of the photovoltaic cells covering the planet increases, resulting in a higher energy output across the power grids of your planet.";
 $lang['info'][12]['name']         			= "Fusion Reactor";
 $lang['info'][12]['description']  			= "In fusion power plants, hydrogen nuclei are fused into helium nuclei under enormous temperature and pressure, releasing tremendous amounts of energy. For each gram of Deuterium consumed, up to 41,32*10^-13 Joule of energy can be produced; with 1 g you are able to produce 172 MWh energy.<br><br>Larger reactor complexes use more deuterium and can produce more energy per hour. The energy effect could be increased by researching energy technology.<br><br>The energy production of the fusion plant is calculated like that:<br>30 * [Level Fusion Plant] * (1,05 + [Level Energy Technology] * 0,01) ^ [Level Fusion Plant]";
-
 // -------------------------- BUILDINGS ----------------------------------------------------------------------------------------------------//
 $lang['info'][14]['name']         			= "Robotics Factory";
 $lang['info'][14]['description']  			= "The Robotics Factory primary goal is the production of State of the Art construction robots. Each upgrade to the robotics factory results in the production of faster robots, which is used to reduce the time needed to construct buildings.";
@@ -628,7 +596,6 @@ $lang['info'][43]['name']         			= "Jump Gate";
 $lang['info'][43]['description']  			= "A Jump Gate is a system of giant transceivers capable of sending even the largest fleets to a receiving Gate anywhere in the universe without loss of time. Utilizing technology similar to that of a Worm Hole to achieve the jump, deuterium is not required. A recharge period of one hour must pass between jumps to allow for regeneration. Transporting resources through the Gate is not possible.";
 $lang['info'][44]['name']         			= "Missile Silo";
 $lang['info'][44]['description']  			= "When Earth destroyed itself in a full scale nuclear exchange back in the 21st century, the technology needed to build such weapons still existed in the universe. Scientists all over the universe worried about the threat of a nuclear bombardment from a rogue leader. So it was decided to use the same technology as a deterrent from launching such a horrible attack.<br><br> Missile silos are used to construct, store and launch interplanetary and anti-ballistic missiles. With each level of the silo, five interplanetary missiles or ten anti-ballistic missiles can be stored. Storage of both Interplanetary missiles and Anti-Ballistic missiles in the same silo is allowed.";
-
 // -------------------------- TECHNOLOGY ----------------------------------------------------------------------------------------------------//
 $lang['info'][106]['name']        			= "Espionage Technology";
 $lang['info'][106]['description'] 			= 'Espionage Technology is your intelligence gathering tool. This technology allows you to view your targets resources, fleets, buildings, and research levels using specially designed probes. Launched on your target, these probes transmit back to your planet an encrypted data file that is fed into a computer for processing. After processing, the information on your target is
@@ -664,7 +631,6 @@ $lang['info'][124]['name']        			= "Expedition Technology";
 $lang['info'][124]['description'] 			= "The Expedition Technology includes several scan researches and allows you to equip different spaceships with research modules to explore uncharted regions of the universe. Those include a database and a fully functional mobile laboratory. <br><br>To assure the security of the expedition fleet during dangerous research situations, the research modules have their own energy supplies and energy field generators which creates a powerful force field around the research module during emergency situations.";
 $lang['info'][199]['name']        			= "Graviton Technology";
 $lang['info'][199]['description'] 			= "The graviton is an elementary particle that mediates the force of gravity in the framework of quantum field theory. The graviton must be massless (because the gravitational force has unlimited range) and must have a spin of 2 (because gravity is a second-rank tensor field). Graviton Technology is only used for one thing, for the construction of the fearsome DeathStar. <br><br>Out of all of the technologies to research, this one carries the most risk of detection during the phase of preparation.";
-
 // -------------------------- SHIPS ----------------------------------------------------------------------------------------------------//
 $lang['info'][202]['name']        			= "Small Cargo";
 $lang['info'][202]['description'] 			= "The first ship built by any emperor, the small cargo is an agile resource moving ship that has a cargo capacity of 5,000 resource units. This multi-use ship not only has the ability to quickly transport resources between your colonies, but also accompanies larger fleets on raiding missions on enemy targets. [Ship refitted with Impulse Drives once reached level 5]";
@@ -696,7 +662,6 @@ $lang['info'][215]['name']        			= "Battlecruiser";
 $lang['info'][215]['description'] 			= "This ship is one of the most advanced fighting ships ever to be developed, and is particularly deadly when it comes to destroying attacking fleets. With its improved laser cannons on board and advanced Hyperspace engine, the Battlecruiser is a serious force to be dealt with in any attack.<br><br> Due to the ships design and its large weapons system, the cargo holds had to be cut, but this is compensated for by the lowered fuel consumption.";
 $lang['info'][216]['name']        			= "Supernova";
 $lang['info'][216]['description']        	= "";
-
 // -------------------------- DEFENSES ----------------------------------------------------------------------------------------------------//
 $lang['info'][401]['name']        			= "Rocket Launcher";
 $lang['info'][401]['description'] 			= "Your first basic line of defense. These are simple ground based launch facilities that fire conventional warhead tipped missiles at attacking enemy targets. As they are cheap to construct and no research is required, they are well suited for defending raids, but lose effectiveness defending from larger scale attacks. Once you begin construction on more advanced defense weapons systems, Rocket Launchers become simple fodder to allow your more damaging weapons to inflict greater damage for a longer period of time.<br><br>After a battle, there is up to a 70 % chance that failed defensive facilities can be returned to use.";
@@ -720,7 +685,6 @@ $lang['info'][502]['name']        			= "Anti-Ballistic Missiles";
 $lang['info'][502]['description'] 			= "Anti Ballistic Missiles (ABM) are your only line of defense when attacked by Interplanetary Missiles (IPM). When a launch of IPMs is detected, these missiles automatically arm, process a launch code in their flight computers, target the inbound IPM, and launch to intercept. During the flight, the target IPM is constantly tracked and course corrections are applied until the ABM reaches the target and destroys the attacking IPM. Each ABM destroys one incoming IPM. <br><br>Each level of your missile silo developed can store 10 ABMs, 5 IPMs, or a combination of both missile types.";
 $lang['info'][503]['name']        			= "Interplanetary Missiles";
 $lang['info'][503]['description'] 			= "Interplanetary Missiles (IPM) are your offensive weapon to destroy the defenses of your target. Using state of the art tracking technology, each missile targets a certain number of defenses for destruction. Tipped with an anti-matter bomb, they deliver a destructive force so severe that destroyed shields and defenses cannot be repaired. The only way to counter these missiles is with APMs.<br><br> Each level of your missile silo developed can store 10 ABMs, 5 IPMs, or a combination of both missile types.";
-
 // -------------------------- OFFICIERS ----------------------------------------------------------------------------------------------------//
 $lang['info'][601]['name']        			= "Geologist";
 $lang['info'][601]['description'] 			= "Geologist is an expert in mining and astro crystallography. Attend their equipment in metallurgy and chemistry and is also responsible for interplanetary communications to optimize the use and refinement of raw material throughout the empire.";
@@ -752,7 +716,6 @@ $lang['info'][614]['name']        			= "Conqueror";
 $lang['info'][614]['description'] 			= "El Conquistador is a member of the Army, it has the ability to navigate a particular type of ship that no one else could do or take off.";
 $lang['info'][615]['name']        			= "Emperor";
 $lang['info'][615]['description'] 			= "The emperor placed under his command available to all officers in the empire, combining their skills to dominate the universe and to become an opponent almost Invensil.";
-
 //----------------------------------------------------------------------------//
 //MESSAGES
 $lang['mg_type'][0]    						= 'Spy reports';
@@ -780,7 +743,6 @@ $lang['mg_message_title']					= 'Messages';
 $lang['mg_message_type']					= 'Message type';
 $lang['mg_total']							= 'Total';
 $lang['mg_game_operators']					= 'Game operators';
-
 //----------------------------------------------------------------------------//
 //ALLIANCE
 $lang['al_description_message']				= 'Alliance description message';
@@ -912,7 +874,6 @@ $lang['al_legend_right_hand']				= '"Right Hand" (necessary to transfer founder 
 $lang['al_requests']						= 'Requests';
 $lang['al_circular_message']				= 'Circular message';
 $lang['al_leave_alliance']					= 'Leave this alliance';
-
 //----------------------------------------------------------------------------//
 //BUDDY
 $lang['bu_request_exists']					= 'There is already an application to that player!';
@@ -939,7 +900,6 @@ $lang['bu_action']							= 'Action';
 $lang['bu_my_requests']						= 'My Requests';
 $lang['bu_partners']						= 'Compañeros';
 $lang['bu_estate']							= 'State';
-
 //----------------------------------------------------------------------------//
 //NOTES
 $lang['nt_important']						= 'Important';
@@ -960,7 +920,6 @@ $lang['nt_characters']						= 'characters';
 $lang['nt_back']							= 'Back';
 $lang['nt_reset']							= 'Reestablecer';
 $lang['nt_save']							= 'Save';
-
 //----------------------------------------------------------------------------//
 //STATISTICS
 $lang['st_player']							= 'Player';
@@ -978,7 +937,6 @@ $lang['st_updated']							= 'Updated';
 $lang['st_show']							= 'show';
 $lang['st_per']								= 'by';
 $lang['st_in_the_positions']				= 'in ranks';
-
 //----------------------------------------------------------------------------//
 //SEARCH
 $lang['sh_tag']								= 'Tag';
@@ -996,7 +954,6 @@ $lang['sh_alliance']						= 'Alliance';
 $lang['sh_planet']							= 'Planet';
 $lang['sh_coords']							= 'Position';
 $lang['sh_position']						= 'Rank';
-
 //----------------------------------------------------------------------------//
 //OPTIONS
 $lang['op_cant_activate_vacation_mode']		= 'If you\'re building or moving fleets will not be able to enter on vacation mode.';
@@ -1042,7 +999,6 @@ $lang['op_deactivate_ipcheck_descrip']		= 'IP check means that a security logout
 $lang['op_spy_probes_number_descrip']		= 'Number of espionage probes that can be sent directly from each scan in the Galaxy menu.';
 $lang['op_activate_vacation_mode_descrip']	= 'Vacation mode will protect you during long absences. It can only be activated if nothing is being built (fleet, building, or defense), nothing is being researched, and none of your fleets are underway. Once it is activated, you are protected from new attacks. Attacks that have already started will be carried out. During vacation mode, production is set to zero and must be manually returned to 100 % after vacation mode ends. Vacation mode lasts a minimum of two days and can only be deactivated after this time.';
 $lang['op_dlte_account_descrip']			= 'If you mark this box, your account will be deleted automatically after 7 days.';
-
 //----------------------------------------------------------------------------//
 //BANNED
 $lang['bn_no_players_banned']				= 'No banned players';
@@ -1054,7 +1010,6 @@ $lang['bn_reason']							= 'Reason';
 $lang['bn_from']							= 'From';
 $lang['bn_until']							= 'Until';
 $lang['bn_by']								= 'By';
-
 //----------------------------------------------------------------------------//
 //SYSTEM
 $lang['sys_attacker_lostunits'] 			= "The attacker has lost a total of";
@@ -1147,7 +1102,6 @@ $lang['sys_destruc_mess'] 					= "A fleet of the planet %s [%d:%d:%d] goes to th
 $lang['sys_destruc_echec'] 					= ". The tremors began to shake off the surface of the moon, but something goes wrong, the graviton in the stars of death also causes tremors and death stars fly to pieces.";
 $lang['sys_destruc_reussi'] 				= ", The tremors began to shake off the surface of the moon, after a while the moon does not support more and fly to pieces, mission accomplished, the fleet returns to home planet.";
 $lang['sys_destruc_null'] 					= ", The stars of death did not generate the power, the mission fails and the ships returned home.";
-
 //----------------------------------------------------------------------------//
 //class.CheckSession.php
 $lang['ccs_multiple_users']					= 'Cookie error! There are several users with this name! You must delete your cookies. In case of problems contact the administrator.';
@@ -1155,13 +1109,11 @@ $lang['ccs_other_user']						= 'Cookie error! Your cookie does not match the use
 $lang['css_different_password']				= 'Cookie error! Session error, must connect again! You must delete your cookies. In case of problems contact the administrator.';
 $lang['css_account_banned_message']			= 'YOUR ACCOUNT HAS BEEN SUSPENDED';
 $lang['css_account_banned_expire']			= 'Expiration:';
-
 //----------------------------------------------------------------------------//
 //class.debug.php
 $lang['cdg_mysql_not_available']			= 'mySQL is not available at the moment...';
 $lang['cdg_error_message']					= 'Error, please contact the administrator. Error n°:';
 $lang['cdg_fatal_error']					= 'FATAL ERROR';
-
 //----------------------------------------------------------------------------//
 //class.FlyingFleetsTable.php
 $lang['cff_no_fleet_data']					= 'No fleet data';
@@ -1192,14 +1144,12 @@ $lang['cff_to_explore']						= ' to explore ';
 $lang['cff_comming_back']					= ' back ';
 $lang['cff_back']							= 'Comming back';
 $lang['cff_to_destination']					= 'Heading to destination';
-
 //----------------------------------------------------------------------------//
 // EXTRA LANGUAGE FUNCTIONS
 $lang['fcm_moon']							= 'Moon';
 $lang['fcp_colony']							= 'Colony';
 $lang['fgp_require']						= 'Requires: ';
 $lang['fgf_time']							= 'Construction Time: ';
-
 //----------------------------------------------------------------------------//
 // CombatReport.php
 $lang['cr_lost_contact']					= 'Contact was lost with the attacking fleet.';
@@ -1210,7 +1160,6 @@ $lang['cr_weapons']							= 'Weapons';
 $lang['cr_shields']							= 'Shields';
 $lang['cr_armor']							= 'Armor';
 $lang['cr_destroyed']						= 'Destroyed!';
-
 //----------------------------------------------------------------------------//
 // FleetAjax.php
 $lang['fa_not_enough_probes']				= 'Error, no sufficient probes';
@@ -1230,7 +1179,6 @@ $lang['fa_not_attack_yourself']				= 'Error, can not attack yourself';
 $lang['fa_action_not_allowed']				= 'Error, action not permitted';
 $lang['fa_vacation_mode_current']			= 'Error, you are in vacation mode';
 $lang['fa_sending']							= 'Sending';
-
 //----------------------------------------------------------------------------//
 // MissilesAjax.php
 $lang['ma_silo_level']						= 'You must be at least level 4 silo';
