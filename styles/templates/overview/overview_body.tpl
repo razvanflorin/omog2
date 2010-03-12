@@ -1,10 +1,22 @@
 <br />
 <div id="content">
     <table width="519">
+	<tr>
+            본 게임은 인터넷상에서 무료로 배포 및 서비스되며 게임 상에 존재할 수 있는 문법에 맞지 않거나 다소 부적절한 표현에 주의하시기 바랍니다.
+<font color="#cc0000">베타 테스트중!</font>
+        </tr>
         <tr>
         	<td class="c" colspan="4"><a href="game.php?page=overview&mode=renameplanet" title="{Planet_menu}">{ov_planet} "{planet_name}"</a> ({user_username})</td>
         </tr>
             {Have_new_message}
+			<tr>
+            <th>캠페인</th>
+            <th colspan="3">홈페이지에 글 좀 많이 써주세요 *^^*</td>
+        </tr>
+		<tr>
+			<th>채팅</th>
+			<th colspan="3"><a href="http://kmsr819.shworks.com/servies/mogame2/webirc.php">IRC채팅</a></td>
+		</tr>
         <tr>
         	<th>{ov_server_time}</th>
         	<th colspan="3">{date_time}</th>

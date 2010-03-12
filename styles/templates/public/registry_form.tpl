@@ -2,16 +2,19 @@
     <div id="main">
         <div id="login">
             <div id="login_input">
-            	<center><h3><strong>{server_message_reg} {servername}!</strong></h3></center>
+            	<center><h3><strong>MOGame2 등록</strong></h3></center>
             </div>
         </div>
         <div id="mainmenu" style="margin-top: 20px;">
-            <a href="index.php">{index}</a>
-            <a href="reg.php">{register}</a>
-            <a href="{forum_url}" target="_blank">{forum}</a>
+            <a href="index.php">처음화면</a>
+        <a href="reg.php">등록</a>
+        <a href="http://kmsr819.shworks.com/servies/mogame2/" target="_blank">사이트</a>
+		<a href="http://kmsr819.shworks.com/servies/mogame2/webirc.php" target="_blank">채팅</a>
+		<a href="http://kmsr819.shworks.com/servies/mogame2/board/board.php?id=cnews&articleNo=2&page=1&searchText=&clickCategory=" target="_blank">튜토리얼</a>
+		<a href="http://kmsr819.shworks.com/servies/mogame2/board/board.php?id=cnews&articleNo=3&page=1&searchText=&clickCategory=" target="_blank">규정</a>
         </div>
         <div id="rightmenu" class="rightmenu">
-            <div id="title">{register_at_reg} {servername}</div>
+            <div id="title">MOGame2 등록</div>
             <div id="content">
                 <center>
                     <div id="text1">
