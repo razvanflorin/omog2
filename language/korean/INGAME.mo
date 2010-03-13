@@ -367,6 +367,7 @@ $lang['tr_resource']						= '자원';
 $lang['tr_amount']							= '수량';
 $lang['tr_quota_exchange']					= '교환 수량';
 $lang['tr_exchange']						= '교환';
+$lang['tr_darkmatter_needed']          = 'You need <font color="#FF8900">%s of dark matter</font> to visit the merchant.';  
 
 //----------------------------------------------------------------------------//
 //TECHTREE
