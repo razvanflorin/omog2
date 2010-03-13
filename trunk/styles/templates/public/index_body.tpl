@@ -43,7 +43,7 @@
                 <div id="text2">
                     <div id="text3">
                         <center>지금 바로 끝모를 우주 전쟁에 참가하십시오!<br />
-						<font color="white">{users_amount} 중 {online_users}명이 플레이중입니다.</font></center>
+						<font color="white">총 {users_amount}명 중 {online_users}명이 플레이중입니다.</font></center>
                     </div>
                 </div>
         	</center>
