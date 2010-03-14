@@ -26,7 +26,7 @@ if ( !defined('INSIDE') ) die(header("location:../"));
 	define('TEMPLATE_DIR'     		 , 'styles/templates/');
 
 	// ADMINISTRATOR EMAIL AND GAME URL - THIS DATA IS REQUESTED BY REG.PHP
-	define('ADMINEMAIL'               , "info@xgproyect.com");
+	define('ADMINEMAIL'               , "kmsr819@naver.com");
 	define('GAMEURL'                  , "http://".$_SERVER['HTTP_HOST']."/");
 
 	// UNIVERSE DATA, GALAXY, SYSTEMS AND PLANETS || DEFAULT 9-499-15 RESPECTIVELY
@@ -44,10 +44,10 @@ if ( !defined('INSIDE') ) die(header("location:../"));
 	define('FIELDS_BY_TERRAFORMER'	  , 5);
 
 	// NUMBER OF PLANETS THAT MAY HAVE A PLAYER
-	define('MAX_PLAYER_PLANETS'       , 9);
+	define('MAX_PLAYER_PLANETS'       , 8);
 
 	// NUMBER OF BUILDINGS THAT CAN GO IN THE CONSTRUCTION QUEUE
-	define('MAX_BUILDING_QUEUE_SIZE'  , 5);
+	define('MAX_BUILDING_QUEUE_SIZE'  , 8);
 
 	// NUMBER OF SHIPS THAT CAN BUILD FOR ONCE
 	define('MAX_FLEET_OR_DEFS_PER_ROW', 1000000);
@@ -57,10 +57,10 @@ if ( !defined('INSIDE') ) die(header("location:../"));
 	define('MAX_OVERFLOW'             , 1);
 
 	// INITIAL RESOURCE OF NEW PLANETS
-	define('BASE_STORAGE_SIZE'        , 100000);
-	define('BUILD_METAL'              ,    500);
-	define('BUILD_CRISTAL'            ,    500);
-	define('BUILD_DEUTERIUM'          , 	 0);
+	define('BASE_STORAGE_SIZE'        , 200000);
+	define('BUILD_METAL'              ,    5000);
+	define('BUILD_CRISTAL'            ,    5000);
+	define('BUILD_DEUTERIUM'          , 	 1000);
 
 	// OFFICIERS DEFAULT VALUES
 	define('COMMANDANT'				  ,      3);
