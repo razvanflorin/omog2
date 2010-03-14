@@ -7,7 +7,7 @@ $lang['mu_moderation_page']	= 'Permissions';
 $lang['adm_cp_logout']		= 'Quit';
 
 //	MISCEL핹EO - MISCELLANEOUS
-$lang['ad_number']			= 'N?;
+$lang['ad_number']			= 'N?';
 $lang['only_numbers']		= 'You can only enter numbers!';
 $lang['select_option']		= 'Select...';
 
