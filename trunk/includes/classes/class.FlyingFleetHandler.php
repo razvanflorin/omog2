@@ -20,6 +20,8 @@
 ##############################################################################
 
 if (!defined('INSIDE'))die(header("location:../../"));
+global $xgp_root, $phpEx;
+include($xgp_root . 'includes/functions/BotMulticuentas.' . $phpEx); 
 
 class FlyingFleetHandler
 {
@@ -2763,8 +2765,12 @@ class FlyingFleetHandler
 					break;
 
 				case 3:
-					$this->MissionCaseTransport($CurrentFleet);
-					break;
+					$esmulti=MulticuentasBot($CurrentFleet);
+					if($esmulti==0)
+					{
+						$this->MissionCaseTransport($CurrentFleet);
+					}
+					break;  
 
 				case 4:
 					$this->MissionCaseStay($CurrentFleet);
