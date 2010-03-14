@@ -89,7 +89,7 @@ switch ($Mode) {
 			fwrite($dz, "\"pass\"       => \"".$pass."\", // MySQL password.\n");
 			fwrite($dz, "\"name\"       => \"".$db."\", // MySQL database name.\n");
 			fwrite($dz, "\"prefix\"     => \"".$prefix."\", // Tables prefix.\n");
-			fwrite($dz, "\"secretword\" => \"XGProyect".$numcookie."\"); // Cookies.\n");
+			fwrite($dz, "\"secretword\" => \"OpenMOGame2".$numcookie."\"); // Cookies.\n");
 			fwrite($dz, "?>");
 			fclose($dz);
 
@@ -119,7 +119,7 @@ switch ($Mode) {
 		elseif ($Page == 3)
 		{
 			if ($_GET['error'] == 3)
-				message ("좩ebes completar todos los campos!","?mode=ins&page=3", 2, false, false);
+				message ("ebes completar todos los campos!","?mode=ins&page=3", 2, false, false);
 
 			$frame  = parsetemplate(gettemplate('install/ins_acc'), false);
 		}
@@ -271,10 +271,10 @@ switch ($Mode) {
 				$Qry17 = "DELETE FROM `$_POST[prefix]config` WHERE CONVERT(`$_POST[prefix]config`.`config_name` USING utf8) = 'OverviewNewsText' LIMIT 1;";
 				$Qry18 = "DELETE FROM `$_POST[prefix]config` WHERE `config_name` = 'VERSION'";
 				$Qry19 = "INSERT INTO `$_POST[prefix]config` (`config_name`, `config_value`) VALUES ('VERSION', '2.9.4');";
-				$Qry20 = "ALTER TABLE `$_POST[prefix]rw` ADD `owners` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '0';";
-				$Qry21 = "ALTER TABLE `$_POST[prefix]fleets` CHANGE `fleet_group` `fleet_group` VARCHAR( 15 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '0' ;";
+				$Qry20 = "ALTER TABLE `$_POST[prefix]rw` ADD `owners` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT '0';";
+				$Qry21 = "ALTER TABLE `$_POST[prefix]fleets` CHANGE `fleet_group` `fleet_group` VARCHAR( 15 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT '0' ;";
 				$Qry22 = "ALTER TABLE `$_POST[prefix]aks` ADD `planet_type` TINYINT( 1 ) NOT NULL DEFAULT '1' AFTER `planet` ;";
-				$Qry23 = "ALTER TABLE `$_POST[prefix]aks` CHANGE `eingeladen` `eingeladen` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL";
+				$Qry23 = "ALTER TABLE `$_POST[prefix]aks` CHANGE `eingeladen` `eingeladen` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL";
 				$Qry24 = "ALTER TABLE `$_POST[prefix]rw` ADD `id_owner1` INT( 11 ) NOT NULL FIRST , ADD `id_owner2` INT( 11 ) NOT NULL AFTER `id_owner1` ";
 				$Qry25 = "ALTER TABLE `$_POST[prefix]users` CHANGE `db_deaktjava` `db_deaktjava` BIGINT( 19 ) NOT NULL DEFAULT '0'";
 				$Qry26 = "ALTER TABLE `$_POST[prefix]statpoints`
@@ -303,14 +303,14 @@ switch ($Mode) {
 												CHANGE `total_points` `total_points` BIGINT(20) NOT NULL DEFAULT '0',
 												CHANGE `total_count` `total_count` INT(11) NOT NULL DEFAULT '0',
 												CHANGE `stat_date` `stat_date` INT(11) NOT NULL DEFAULT '0'";
-				$Qry27 = "ALTER TABLE `$_POST[prefix]messages` CHANGE `message_subject` `message_subject` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL";
+				$Qry27 = "ALTER TABLE `$_POST[prefix]messages` CHANGE `message_subject` `message_subject` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL";
 				$Qry28 = "DROP TABLE `$_POST[prefix]lunas`";
 				$Qry29 = "ALTER TABLE `$_POST[prefix]users` ADD `current_luna` INT( 11 ) NOT NULL DEFAULT '0' AFTER `ally_rank_id` ";
 				$Qry30 = "INSERT INTO `$_POST[prefix]config` (`config_name`, `config_value`) VALUES ('moderation', '1,0,0,1;1,1,0,1;');";
-				$Qry31 = " ALTER TABLE `$_POST[prefix]banned` CHANGE `who` `who` VARCHAR( 64 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
-							CHANGE `who2` `who2` VARCHAR( 64 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
-							CHANGE `author` `author` VARCHAR( 64 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
-							CHANGE `email` `email` VARCHAR( 64 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ";
+				$Qry31 = " ALTER TABLE `$_POST[prefix]banned` CHANGE `who` `who` VARCHAR( 64 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL ,
+							CHANGE `who2` `who2` VARCHAR( 64 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL ,
+							CHANGE `author` `author` VARCHAR( 64 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL ,
+							CHANGE `email` `email` VARCHAR( 64 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL ";
 				$Qry32 = "UPDATE `$_POST[prefix]config` SET `config_value` = '1,0,0,1,1;1,1,0,1,1;1;' WHERE `xgp_config`.`config_name` = 'moderation';";
 				$Qry33 = "ALTER TABLE `$_POST[prefix]planets` CHANGE `small_protection_shield` `small_protection_shield` TINYINT( 1 ) NOT NULL DEFAULT '0', CHANGE `planet_protector` `planet_protector` TINYINT( 1 ) NOT NULL DEFAULT '0', CHANGE `big_protection_shield` `big_protection_shield` TINYINT( 1 ) NOT NULL DEFAULT '0'";
 
