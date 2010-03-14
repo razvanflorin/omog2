@@ -106,7 +106,7 @@ $lang['ov_diameter']						= 'Diameter';
 $lang['ov_distance_unit']					= 'km';
 $lang['ov_temperature']						= 'Temperature';
 $lang['ov_aprox']							= 'approx.';
-$lang['ov_temp_unit']						= '°C';
+$lang['ov_temp_unit']						= 'ìºœ';
 $lang['ov_to']								= 'to';
 $lang['ov_position']						= 'Position';
 $lang['ov_points']							= 'Points';
@@ -270,7 +270,7 @@ $lang['fl_expedition_tech_required']		= 'Expedition tech required!';
 $lang['fl_expedition_fleets_limit']			= 'Expedition flying fleets limite reached!';
 $lang['fl_week_player']						= 'The player is very weak!';
 $lang['fl_strong_player']					= 'The player is very strong!';
-$lang['fl_in_vacation_player']				= '¡El jugador esta en modo vacaciones!';
+$lang['fl_in_vacation_player']				= 'ì¢ªl jugador esta en modo vacaciones!';
 $lang['fl_no_slots']						= 'No more slots available';
 $lang['fl_empty_transport']					= 'You can not transport 0 resources';
 $lang['fl_planet_populed']					= 'This planet is occupied!';
@@ -312,7 +312,7 @@ $lang['bd_spy']								= ' spy';
 $lang['bd_commander']						= ' commander';
 $lang['bd_research']						= 'research';
 $lang['bd_shipyard_required']				= 'You need to build a shipyard on this planet first!';
-$lang['bd_building_shipyard']				= 'No puedes fabricar naves durante la ampliación del hangar';
+$lang['bd_building_shipyard']				= 'No puedes fabricar naves durante la ampliaci? del hangar';
 $lang['bd_available']						= 'Available: ';
 $lang['bd_build_ships']						= 'Build';
 $lang['bd_protection_shield_only_one']		= 'The shield can be built only once!';
@@ -452,7 +452,7 @@ $lang['res']['descriptions'] = array(
 2 => "Crystals are the main resource used to build electronic circuits and form certain alloy compounds.",
 3 => "Deuterium is used as fuel for spaceships and is harvested in the deep sea. Deuterium is a rare substance and is thus relatively expensive.",
 4 => "Solar power plants absorb energy from solar radiation. All mines need energy to operate.",
-12 => "Un reactor de fusión nuclear que produce un átomo de helio a partir de dos átomos de deuterio usando una presión extremadamente alta y una elevadísima temperatura.",
+12 => "Un reactor de fusi? nuclear que produce un ?omo de helio a partir de dos ?omos de deuterio usando una presi? extremadamente alta y una elevad?ima temperatura.",
 14 => "Robotic factories provide construction robots to aid in the construction of buildings. Each level increases the speed of the upgrade of buildings.",
 15 => "",
 21 => "El hangar es el lugar donde se construyen naves y estructuras de defensa planetaria.",
@@ -496,7 +496,7 @@ $lang['res']['descriptions'] = array(
 213 => "El destructor es la nave m&aacute;s pesada jam&aacute;s vista y posee un potencial de ataque sin precedentes.",
 214 => "No hay nada tan grande y peligroso como una estrella de la muerte aproxim&aacute;ndose.",
 215 => "El Acorazado es una nave altamente especializada en la intercepci&oacute;n de flotas hostiles.",
-216 => "La SuperNova es la nave más poderosa nunca antes creada, con un gran poder ofensivo que ninguna nave podra resistir a su ataque.",
+216 => "La SuperNova es la nave m? poderosa nunca antes creada, con un gran poder ofensivo que ninguna nave podra resistir a su ataque.",
 401 => "El lanzamisiles es un sistema de defensa sencillo, pero barato.",
 402 => "Por medio de un rayo l&aacute;ser concentrado, se puede provocar m&aacute;s da&ntilde;o que con las armas bal&iacute;sticas normales.",
 403 => "Los l&aacute;sers grandes posee una mejor salida de energ&iacute;a y una mayor integridad estructural que los l&aacute;sers peque&ntilde;os.",
@@ -508,21 +508,21 @@ $lang['res']['descriptions'] = array(
 409 => "La maxima proteccion para los planetas",
 502 => "Los misiles de intercepci&oacute;n destruyen los misiles interplanetarios.",
 503 => "Los misiles interplanetarios destruyen los sistemas de defensa del enemigo.",
-601 => 'Geologist is an expert in mining and astro crystallography. Attend their equipment in metallurgy and chemistry and is also responsible for interplanetary communications to optimize the use and refinement of raw material throughout the empire.<br><br><strong><font color="lime">+5% de producción. Nivel Máx. 20</font></strong>',
-602 => 'The Admiral is an experienced veteran and a skillful strategist. The hardest battle is able to get an idea of the situation and contact their admirals subordinates. A wise emperor could rely on their help during the fighting.<br><br><strong><font color="lime">+5% escudo en naves. Nivel Máx. 20</font></strong>',
-603 => 'The Engineer is a specialist in energy management. In peacetime, it increases the energy of all the colonies. In case of attack, ensuring the supply of energy to the cannons, and avoid a possible overload, leading to a reduction in defense lost battle.<br><br><strong><font color="lime">+5% de energia. Nivel Máx. 10</font></strong>',
-604 => 'The guild is composed of technocrats authentic genius, and always find that dangerous edge where it all explode into a thousand pieces before they could find an explanation and technology rational. No normal human being ever try to decode the code of a technocrat, with its presence, the researchers modeled the rule.<br><br><strong><font color="lime">+5% velocidad de construcción de naves. Nivel Máx. 10</font></strong>',
-605 => 'The constructor has altered their DNA, only one of these men can build an entire city in a short time.<br><br><strong><font color="lime">+10% de rapidez en la construcción de edificios. Nivel Máx. 3</font></strong>',
-606 => 'Scientists are part of a guild to concurrent technocrats. They specialize in the improvement of technologies.<br><br><strong><font color="lime">+10% de rapidez en la investigacion. Nivel Máx. 3</font></strong>',
-607 => 'Storage is part of the ancient brotherhood of the planet Hsac. His motto is to win the maximum, which is why we need huge storage space. Thus has developed a new storage technique.<br><br><strong><font color="lime">+50% de almacenamiento. Nivel Máx.2</font></strong>',
-608 => 'The defender is a member of the imperial army. focus on your job allows you to build a formidable defense in a short period of time.<br><br><strong><font color="lime">+25% de rapidez en la construccion de defensas. Nivel Máx. 2</font></strong>',
-609 => 'The guard is part of the imperial army and its goal is to develop technologies that improve the planetary defenses.<br><br><strong><font color="lime">Desbloquea la protección planetaria. Nivel Máx. 1</font></strong>',
-610 => 'Spy is an enigmatic person. No one ever saw his true face, the only way would be killed.<br><br><strong><font color="lime">+5 niveles de espionaje. Nivel Máx. 2</font></strong>',
-611 => 'The commander is part of the Imperial Army has mastered the art of managing fleets. Your brain can calculate the trajectories of a large number of fleets.<br><br><strong><font color="lime">+3 slots para flotas. Nivel Máx. 3</font></strong>',
-612 => 'The destructor is a member of the imperial army without mercy. Slaughter everything that is on its way just for fun. It is currently developing a new method of producing the Death Star.<br><br><strong><font color="lime">2 estrellas al hacer 1. Nivel Máx. 1</font></strong>',
-613 => 'The general is a person who has served for many years to the imperial army. manufacturers produce ships faster in its presence.<br><br><strong><font color="lime">+10% de rapidez en los hangares. Nivel Máx. 3</font></strong>',
-614 => 'The conqueror is a member of the Army, it has the ability to navigate a particular type of ship that no one else could do or take off.<br><br><strong><font color="lime">Desbloquea la SuperNova. Nivel Máx. 1</font></strong>',
-615 => 'The emperor placed under his command available to all officers in the empire, combining their skills to dominate the universe and to become an opponent almost Invensil.<br><br><strong><font color="lime">Desbloquea la destrucción planetaria. Nivel Máx. 1</font></strong>',
+601 => 'Geologist is an expert in mining and astro crystallography. Attend their equipment in metallurgy and chemistry and is also responsible for interplanetary communications to optimize the use and refinement of raw material throughout the empire.<br><br><strong><font color="lime">+5% de producci?. Nivel M?. 20</font></strong>',
+602 => 'The Admiral is an experienced veteran and a skillful strategist. The hardest battle is able to get an idea of the situation and contact their admirals subordinates. A wise emperor could rely on their help during the fighting.<br><br><strong><font color="lime">+5% escudo en naves. Nivel M?. 20</font></strong>',
+603 => 'The Engineer is a specialist in energy management. In peacetime, it increases the energy of all the colonies. In case of attack, ensuring the supply of energy to the cannons, and avoid a possible overload, leading to a reduction in defense lost battle.<br><br><strong><font color="lime">+5% de energia. Nivel M?. 10</font></strong>',
+604 => 'The guild is composed of technocrats authentic genius, and always find that dangerous edge where it all explode into a thousand pieces before they could find an explanation and technology rational. No normal human being ever try to decode the code of a technocrat, with its presence, the researchers modeled the rule.<br><br><strong><font color="lime">+5% velocidad de construcci? de naves. Nivel M?. 10</font></strong>',
+605 => 'The constructor has altered their DNA, only one of these men can build an entire city in a short time.<br><br><strong><font color="lime">+10% de rapidez en la construcci? de edificios. Nivel M?. 3</font></strong>',
+606 => 'Scientists are part of a guild to concurrent technocrats. They specialize in the improvement of technologies.<br><br><strong><font color="lime">+10% de rapidez en la investigacion. Nivel M?. 3</font></strong>',
+607 => 'Storage is part of the ancient brotherhood of the planet Hsac. His motto is to win the maximum, which is why we need huge storage space. Thus has developed a new storage technique.<br><br><strong><font color="lime">+50% de almacenamiento. Nivel M?.2</font></strong>',
+608 => 'The defender is a member of the imperial army. focus on your job allows you to build a formidable defense in a short period of time.<br><br><strong><font color="lime">+25% de rapidez en la construccion de defensas. Nivel M?. 2</font></strong>',
+609 => 'The guard is part of the imperial army and its goal is to develop technologies that improve the planetary defenses.<br><br><strong><font color="lime">Desbloquea la protecci? planetaria. Nivel M?. 1</font></strong>',
+610 => 'Spy is an enigmatic person. No one ever saw his true face, the only way would be killed.<br><br><strong><font color="lime">+5 niveles de espionaje. Nivel M?. 2</font></strong>',
+611 => 'The commander is part of the Imperial Army has mastered the art of managing fleets. Your brain can calculate the trajectories of a large number of fleets.<br><br><strong><font color="lime">+3 slots para flotas. Nivel M?. 3</font></strong>',
+612 => 'The destructor is a member of the imperial army without mercy. Slaughter everything that is on its way just for fun. It is currently developing a new method of producing the Death Star.<br><br><strong><font color="lime">2 estrellas al hacer 1. Nivel M?. 1</font></strong>',
+613 => 'The general is a person who has served for many years to the imperial army. manufacturers produce ships faster in its presence.<br><br><strong><font color="lime">+10% de rapidez en los hangares. Nivel M?. 3</font></strong>',
+614 => 'The conqueror is a member of the Army, it has the ability to navigate a particular type of ship that no one else could do or take off.<br><br><strong><font color="lime">Desbloquea la SuperNova. Nivel M?. 1</font></strong>',
+615 => 'The emperor placed under his command available to all officers in the empire, combining their skills to dominate the universe and to become an opponent almost Invensil.<br><br><strong><font color="lime">Desbloquea la destrucci? planetaria. Nivel M?. 1</font></strong>',
 );
 //----------------------------------------------------------------------------//
 //INFOS
@@ -898,7 +898,7 @@ $lang['bu_coords']							= 'Coordinates';
 $lang['bu_text']							= 'Text';
 $lang['bu_action']							= 'Action';
 $lang['bu_my_requests']						= 'My Requests';
-$lang['bu_partners']						= 'Compañeros';
+$lang['bu_partners']						= 'Compa?ros';
 $lang['bu_estate']							= 'State';
 //----------------------------------------------------------------------------//
 //NOTES
@@ -1112,7 +1112,7 @@ $lang['css_account_banned_expire']			= 'Expiration:';
 //----------------------------------------------------------------------------//
 //class.debug.php
 $lang['cdg_mysql_not_available']			= 'mySQL is not available at the moment...';
-$lang['cdg_error_message']					= 'Error, please contact the administrator. Error n°:';
+$lang['cdg_error_message']					= 'Error, please contact the administrator. Error n?';
 $lang['cdg_fatal_error']					= 'FATAL ERROR';
 //----------------------------------------------------------------------------//
 //class.FlyingFleetsTable.php
