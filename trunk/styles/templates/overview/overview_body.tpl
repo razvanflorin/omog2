@@ -50,5 +50,10 @@
             <th>{ov_points}</th>
             <th colspan="3">{user_rank}</td>
         </tr>
+		<tr>
+    <td colspan="4" class="c"><center>다음 주소로 당신의 친구를 초청해보세요.<span class="style1">추천인 링크</span><b></center></td>
+    <tr>   
+    <td colspan="4" class="c"><center><a href="./reg.php?ref={user_username}" class="style2">http://mogame2.kr/uni2/reg.php?ref={user_username}</a></b></center></center>
+    </td>  
     </table>
 </div>
