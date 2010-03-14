@@ -31,7 +31,7 @@
                             	<td>이메일 </td>
                                 <td><input name="email" size="20" maxlength="40" type="text"></td>
                             </tr>
-<input type="hidden" name="ref" value="{referido}" />
+
                         </table>
                     </div>
             		<div id="register" class="bigbutton" onclick="document.reg_form.submit();">{register_now}</div>
