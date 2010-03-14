@@ -11,6 +11,9 @@
 	<th><input name="game_name"  value="{game_name}" type="text" maxlength="60"></th>
 	<th width="5%"><img src="../styles/images/Adm/i.gif" onMouseOver='return overlib("{se_server_naame}", CENTER, OFFSETX, -150, OFFSETY, -10, WIDTH, 250);' onMouseOut='return nd();'></th>
 </tr><tr>
+    <th>{se_max_users}</th>
+    <th><input name="max_users"  size=20 value="{max_users}" type="text"></th>
+</tr><tr>
 	<th>{se_cookie_name}</th>
 	<th><input name="cookie_name" maxlength="15" value="{cookie}" type="text"></th>
 	<th><img src="../styles/images/Adm/i.gif" onMouseOver='return overlib("{se_cookie_advert}", CENTER, OFFSETX, -150, OFFSETY, -10, WIDTH, 250);' onMouseOut='return nd();'></th>

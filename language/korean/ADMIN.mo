@@ -431,6 +431,7 @@ $lang['se_title_admins_protection']			= 'Check the box to activate the protectio
 $lang['se_admin_protection']				= 'Protection';
 $lang['se_debug_mode']						= 'Debug mode';
 $lang['se_save_parameters']					= 'Save settings';
+$lang['se_max_users']                        = 'Users limit'; 
 $lang['se_configuration_title']				= 'Configuration';
 $lang['se_server_naame']					= 'Name of your game';
 $lang['se_cookie_name']						= 'Cookie name';

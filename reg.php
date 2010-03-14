@@ -245,6 +245,9 @@ if ($_POST)
 else
 {
 	$parse['servername']   = $game_config['game_name'];
+	$users_amount = doquery("SELECT `config_value` FROM `{{table}}` WHERE `config_name` = 'users_amount';", "config", true);
+    $max_users = doquery("SELECT `config_value` FROM `{{table}}` WHERE `config_name` = 'max_users';", "config", true);
+    if ($users_amount === $max_users)die(message ($lang['max_users'], "index.php", "3", false, false)); 
 	$parse['forum_url']    = $game_config['forum_url'];
 	display (parsetemplate(gettemplate('public/registry_form'), $parse), false, '',false, false);
 }

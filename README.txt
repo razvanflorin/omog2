@@ -11,3 +11,7 @@ OpenMOGame2
 만약 글씨 깨지는경우.. 유니코드 문제를 의심해야함
 DB는 인코딩을 utf8_general_ci 로, 파일은 UTF8 Without BOM으로 맞추면됨.
 
+3. 서버 제한걸기
+최대 가입자수 제한을 걸려면
+INSERT INTO `_config 비슷한 테이블명` (`config_name`, `config_value`) VALUES ('max_users', '500');
+를 DB로 실행

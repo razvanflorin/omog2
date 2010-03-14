@@ -110,6 +110,7 @@ $QryInsertConfig    .= "('stat_settings'         , '1000'), ";
 $QryInsertConfig    .= "('stat_amount'           , '25'), ";
 $QryInsertConfig    .= "('stat_update_time'      , '15'), ";
 $QryInsertConfig    .= "('stat_flying'           , '1') ";
+$QryInsertConfig    .= "('max_users'             , '500') ";  //최대가입인원을 500으로 제한
 $QryInsertConfig    .= ";";
 
 $QryTableErrors      = "CREATE TABLE `{{table}}` ( ";
