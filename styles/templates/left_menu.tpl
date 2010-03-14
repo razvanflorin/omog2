@@ -132,19 +132,6 @@ function f(target_url,win_name) {
  <tr>
   <td>
 
-   <div align="center"><font color="#FFFFFF">
-     <a href='game.php?page=soporte'>지원</a>
-    </font></div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div align="center"><font color="#FFFFFF">
-    <a href="http://kmsr819.shworks.com/servies/mogame2" target="_blank">사이트</a>
-   </font></div>
-  </td>
- </tr>
-
   <tr>
   <td>
    <div align="center"><font color="#FFFFFF">
@@ -197,7 +184,7 @@ function f(target_url,win_name) {
   <tr>
   <td>
    <div align="center"><font color="#FFFFFF">
-     <a href='http://kmsr819.shworks.com/servies/mogame2/webirc.php'>채팅</a>
+     <a href='http://mogame2.kr/webirc.php'>채팅</a>
     </font></div>
   </td>
  </tr>
