@@ -403,7 +403,7 @@ function ShowOverviewPage($CurrentUser, $CurrentPlanet)
 			else
 				$parse['user_rank']			= "-";
 
-			$parse['date_time']				= date("D M j H:i:s", time());
+			$parse['date_time']				= date("j M D H:i:s", time());
 
 			return display(parsetemplate(gettemplate('overview/overview_body'), $parse));
 			break;

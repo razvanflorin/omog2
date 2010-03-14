@@ -25,7 +25,7 @@ $lang['time_seconds']	= 'Seconds';
 //###########################################################//
 
 
-//---------------	풱I O NO? - YES OR NO?	------------------------// 
+//---------------	I O NO? - YES OR NO?	------------------------// 
 $lang['one_is_yes'][1]	= 'Yes';
 $lang['one_is_yes'][0]	= 'No';
 
@@ -236,7 +236,7 @@ $lang['ad_personal_email']		= 'E-mail';
 $lang['ad_personal_email2']		= 'E-mail permanent';
 $lang['ad_personal_pass']		= 'Password';
 $lang['ad_personal_succes']		= 'Settings changed  successfully';
-$lang['ad_personal_vacat']		= '풴acations?';
+$lang['ad_personal_vacat']		= 'acations?';
 
 //	ALIANZA - ALLIANCES
 $lang['ad_ally_title']		= 'Edit Alliances';
@@ -287,7 +287,7 @@ $lang['bo_the_player2']			= 'The player ';
 $lang['bo_banned']				= ' Was stopped successfully.';
 $lang['bo_unbanned']			= ' He has lifted the suspension correctly.';
 $lang['bo_username']			= 'User name';
-$lang['bo_vacaations']			= '풴acations?';
+$lang['bo_vacaations']			= 'acations?';
 $lang['bo_reason']				= 'Reason for Suspension';
 $lang['bo_time']				= 'Suspension time';
 $lang['bo_vacation_mode']		= 'Vacations mode';
@@ -331,7 +331,7 @@ $lang['cs_users_per_block']				= 'Users per block (min. 10)';
 $lang['cs_fleets_on_block']				= 'Update fleets in block?';
 $lang['cs_time_between_updates']		= 'Time between updates of statistics';
 $lang['cs_minutes']						= 'minutes';
-$lang['cs_points_to_zero']				= '풲he administration can appear at the ranking?';
+$lang['cs_points_to_zero']				= 'he administration can appear at the ranking?';
 $lang['cs_access_lvl']					= 'Until what rank can appear at the ranking?';
 $lang['cs_save_changes']				= 'Save the changes';
 $lang['cs_timeact_1']					= 'The last update was on: ';
@@ -387,7 +387,7 @@ $lang['od_select_action']	= 'Select';
 //###########################################################//
 
 
-//---------------	P핯INA DE INICIO - OVERVIEW	------------------------//
+//---------------	PINA DE INICIO - OVERVIEW	------------------------//
 $lang['ow_title']				= 'Welcome to XG Proyect';
 $lang['ow_welcome_text']		= 'Thank you for choosing XG Proyect. Day by day we work to be the OpenSource OGame N? on the web. Here is a "look" of the overall game. You can make all the changes you want browsing the menu on the left.';
 $lang['ow_overview']			= 'Control panel';
@@ -575,7 +575,7 @@ $lang['re_reset_excess']					= 'Options restarted successfully';
 //###########################################################//
 
 
-//---------------	INFORMACI? DE CUENTAS - DATA ACCOUNTS	------------------------//
+//---------------	INFORMACI DE CUENTAS - DATA ACCOUNTS	------------------------//
 $lang['ac_user_id_required']				= 'You must select any user!';
 $lang['ac_select_one_id']					= 'Please choose only one user!';
 $lang['ac_no_character']					= 'We do not accept letters, only numbers!';
