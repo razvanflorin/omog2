@@ -20,23 +20,24 @@
                     <div id="text1">
                     	<table>
                         	<tr>
-                            	<td>{user_reg}:</td>
+                            	<td>이름 </td>
                                 <td><input name="character" size="20" maxlength="20" type="text"></td>
                             </tr>
                         	<tr>
-                            	<td>{pass_reg}:</td>
+                            	<td>비밀번호 </td>
                                 <td><input name="passwrd" size="20" maxlength="20" type="password"></td>
                             </tr>
                         	<tr>
-                            	<td>{email_reg}:</td>
+                            	<td>이메일 </td>
                                 <td><input name="email" size="20" maxlength="40" type="text"></td>
                             </tr>
+<input type="hidden" name="ref" value="{referido}" />
                         </table>
                     </div>
             		<div id="register" class="bigbutton" onclick="document.reg_form.submit();">{register_now}</div>
             		<div id="text2">
                 		<div id="text3">
-							<center><b>{accept_terms_and_conditions} <input name="rgt" type="checkbox"></b></center>
+							<center><b>모게임2에 가입하겠습니다. <input name="rgt" type="checkbox"></b></center>
                			 </div>
             		</div>
                 </center>

@@ -232,6 +232,11 @@ if ($_POST)
 		SendSimpleMessage($NewUser['id'], $sender, $Time, 1, $from, $Subject, $message);
 
 		doquery("UPDATE {{table}} SET `config_value` = `config_value` + '1' WHERE `config_name` = 'users_amount' LIMIT 1;", 'config');
+	if($_POST['ref']!=""){
+       $comp1 = doquery("SELECT `id` FROM {{table}} WHERE `username` = '". $_POST['ref'] ."';", 'users', true);
+       if($comp1['id']!="")   
+          doquery("UPDATE {{table}} SET `darkmatter`= darkmatter + 2000 WHERE `id`='".$comp1['id']."' limit 1;", "users");
+    } 	
 
 		@include('config.php');
 		$cookie = $NewUser['id'] . "/%/" . $UserName . "/%/" . md5($md5newpass . "--" . $dbsettings["secretword"]) . "/%/" . 0;
@@ -245,6 +250,7 @@ if ($_POST)
 else
 {
 	$parse['servername']   = $game_config['game_name'];
+	 $parse['referido']   = $_GET['ref'];  
 	$users_amount = doquery("SELECT `config_value` FROM `{{table}}` WHERE `config_name` = 'users_amount';", "config", true);
     $max_users = doquery("SELECT `config_value` FROM `{{table}}` WHERE `config_name` = 'max_users';", "config", true);
     if ($users_amount === $max_users)die(message ($lang['max_users'], "index.php", "3", false, false)); 
