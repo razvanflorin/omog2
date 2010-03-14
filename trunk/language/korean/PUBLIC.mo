@@ -56,6 +56,7 @@ $lang['welcome_message_subject']		= '환영합니다!';
 $lang['welcome_message_content']		= 'MOGame2 에 가입해주셔서 감사합니다.<p>먼저, 메탈 광업소를 지으세요.<br />왼쪽의 메뉴에서 건물로 들어가 메탈 광업소를 지으면 됩니다.<br />잠깐! 이건 제일 기본적인 시작이고, 다른 곳에서 더 많은 정보를 얻을 수 있습니다.<p>공식 튜토리얼 : <br />튜토리얼이 공식 사이트에서 제공됩니다. <a href=\"http://kmsr819.shworks.com/servies/mogame2/board/board.php?id=cnews&articleNo=2&page=1&searchText=&clickCategory=\" target=\"_blank\">보기</a><br />이쯤이면 메탈광업소의 건설이 완료되었을 것입니다.<br />그러면 태양열 발전소를 지어보세요.<p>이제, 남은 일은 여러분이 당신의 모성을 발전시키는 것입니다!<p>광활한 우주에 당신의 대제국을 이룩하여 보세요! -민군-';
 $lang['newpass_smtp_email_error']		= '<br><br>이메일 전송 실패.. 당신의 비밀번호 입니다 : ';
 $lang['reg_completed']					= '성공적으로 등록됬습니다!';
+$lang['max_users']                    = '최대 가입 한도에 도달했습니다.';  
 
 //registry_form.tpl
 $lang['server_message_reg']				= '지금 가입하고 우주전쟁에 참여하세요.';

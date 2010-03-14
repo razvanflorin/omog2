@@ -117,6 +117,9 @@ function DisplayGameSettingsPage ( $CurrentUser )
 		} else {
 			$game_config['lang'];
 		}
+		 if (isset($_POST['max_users']) && is_numeric($_POST['max_users'])) {
+        $game_config['max_users'] = $_POST['max_users'];
+        }
 
 		if (isset($_POST['cookie_name']) && $_POST['game_name'] != '') {
 			$game_config['COOKIE_NAME'] = $_POST['cookie_name'];
@@ -180,6 +183,7 @@ function DisplayGameSettingsPage ( $CurrentUser )
 		doquery("UPDATE {{table}} SET `config_value` = '" .$game_config['debug']                  ."' WHERE `config_name` = 'debug'", 'config');
 		doquery("UPDATE {{table}} SET `config_value` = '" .$game_config['adm_attack']             ."' WHERE `config_name` = 'adm_attack'", 'config');
 		doquery("UPDATE {{table}} SET `config_value` = '" .$game_config['lang']             	  ."' WHERE `config_name` = 'lang'", 'config');
+		doquery("UPDATE {{table}} SET `config_value` = '" .$game_config['max_users']                 ."' WHERE `config_name` = 'max_users'", 'config');  
 		doquery("UPDATE {{table}} SET `config_value` = '" .$game_config['COOKIE_NAME'] 			  ."' WHERE `config_name` = 'COOKIE_NAME';", 'config');
 		doquery("UPDATE {{table}} SET `config_value` = '" .$game_config['noobprotection']         ."' WHERE `config_name` = 'noobprotection'", 'config');
 		doquery("UPDATE {{table}} SET `config_value` = '" .$game_config['Defs_Cdr'] 	  		  ."' WHERE `config_name` = 'Defs_Cdr';", 'config');
@@ -205,6 +209,7 @@ function DisplayGameSettingsPage ( $CurrentUser )
 		$parse['close_reason']           	= stripslashes($game_config['close_reason']);
 		$parse['debug']                  	= ($game_config['debug'] == 1)        ? " checked = 'checked' ":"";
 		$parse['adm_attack']             	= ($game_config['adm_attack'] == 1)   ? " checked = 'checked' ":"";
+		$parse['max_users']                  = $game_config['max_users'];  
 		$parse['cookie'] 					= $game_config['COOKIE_NAME'];
 		$parse['defenses'] 					= $game_config['Defs_Cdr'];
 		$parse['shiips'] 					= $game_config['Fleet_Cdr'];

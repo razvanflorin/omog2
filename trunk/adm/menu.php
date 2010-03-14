@@ -124,6 +124,9 @@ $ToolsTable	=
         	<th ".$onMouseOverIE." class=\"ForIE\"><a href=\"statbuilder.php\" target=\"Hauptframe\" onClick=\" return confirm('".$lang['mu_mpu_confirmation']."');\">
 			".$lang['mu_manual_points_update']."</a></th>
     	</tr>
+		<tr>
+        	<th ".$onMouseOverIE." class=\"ForIE\"><a href=\"support.php\" target=\"Hauptframe\">지원</a></th>
+    	</tr>
 		</table>";
 
 
