@@ -16,9 +16,9 @@
 
 $QryTableAks         = "CREATE TABLE `{{table}}` ( ";
 $QryTableAks        .= "`id` bigint(20) unsigned NOT NULL auto_increment, ";
-$QryTableAks        .= "`name` varchar(50) collate utf8_general_ci default NULL, ";
-$QryTableAks        .= "`teilnehmer` text collate utf8_general_ci, ";
-$QryTableAks        .= "`flotten` text collate utf8_general_ci, ";
+$QryTableAks        .= "`name` varchar(50) collate utf8_unicode_ci default NULL, ";
+$QryTableAks        .= "`teilnehmer` text collate utf8_unicode_ci, ";
+$QryTableAks        .= "`flotten` text collate utf8_unicode_ci, ";
 $QryTableAks        .= "`ankunft` int(32) default NULL, ";
 $QryTableAks        .= "`galaxy` int(2) default NULL, ";
 $QryTableAks        .= "`system` int(4) default NULL, ";
